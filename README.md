@@ -3,18 +3,18 @@
 Implementation of a DDoS botnet as well as DDoS detection tools, tested on the DETERLabs systems.
 
 ##Team Members:
-*Calvin Chan
-*Kacey Ryan
-*Kenny Shi
-*Jeffrey Wang
+* Calvin Chan
+* Kacey Ryan
+* Kenny Shi
+* Jeffrey Wang
 
 #Midterm Report
 
-##Introduction to project
+###Introduction
 
-##Design Decisions
+###Design Decisions
 
-##DDoS Detection Methods
+###DDoS Detection Methods
 
 ###Backscatter
 
