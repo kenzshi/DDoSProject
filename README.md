@@ -19,22 +19,22 @@ The distributed denial of service (DDoS) project will be divided into two parts.
 ![DDoS Implementation Design](https://raw.githubusercontent.com/kenzshi/DDoSProject/master/DDOSMockup.png)
 
 The implementation of our DDoS network consists of three important parts:
-* Botnet - The botnet will be responsible for carrying out the attack on a server. It consists of a master/slave configuration of computers:
-* Master - The “main” machine in the DDoS attack, the master node will be in charge of sending to and receiving messages from the slave to coordinate the attack. The master node will also perform the time synchronization of the other nodes to make sure that the attack happens at the same time.
-* Slaves - These will be the mindless drones in our attack. Using DETERLab’s environment, we will spin up a number of these slaves that will be controlled by the master node. These slave nodes will receive messages from the master and flood the victim server with packets.
-* Control - A regular node (not part of the botnet) that connects to the server normally. This node will be used as a reference point to compare connection performance against the other nodes that are actually involved in the DDoS attack. It will be used in our analysis to help us figure out the irregularities in the network as a result of the attack. 
-* Server - node in which all other nodes will connect and send requests to. The server must be implemented in such a way that a specified, weak number of connections will bring it down.
+* **Botnet** - The botnet will be responsible for carrying out the attack on a server. It consists of a master/slave configuration of computers:
+* **Master** - The “main” machine in the DDoS attack, the master node will be in charge of sending to and receiving messages from the slave to coordinate the attack. The master node will also perform the time synchronization of the other nodes to make sure that the attack happens at the same time.
+* **Slaves** - These will be the mindless drones in our attack. Using DETERLab’s environment, we will spin up a number of these slaves that will be controlled by the master node. These slave nodes will receive messages from the master and flood the victim server with packets.
+* **Control** - A regular node (not part of the botnet) that connects to the server normally. This node will be used as a reference point to compare connection performance against the other nodes that are actually involved in the DDoS attack. It will be used in our analysis to help us figure out the irregularities in the network as a result of the attack. 
+* **Server** - node in which all other nodes will connect and send requests to. The server must be implemented in such a way that a specified, weak number of connections will bring it down.
 
 As these three entities interact with each other and carry out a DDoS attack, we will be able to analyze the attacks to compare and contrast the different types of detection.
 
 ###Technical Design
 
 For the technical aspects of the design, we will be writing the majority of the code in Python. The code will be distributed to machines provided to us by DETERLab. The components of our project are as follows:
-* server.py: Poor implementation of a server, since we want it to be easily DDoS’d with only a few machines (due to DETERLab limits)
-* analysis.py: Implementation of our two detection methods as well as performance analysis code
-* master.py: Takes care of time syncronization and communication between the slave machines
-* slave.py: Reports information to master.py and listens for attack information, floods target with HTTP GET requests, and spoofs IP 
-* control.py: Very simple client that sends requests to our server
+* **server.py**: Poor implementation of a server, since we want it to be easily DDoS’d with only a few machines (due to DETERLab limits)
+* **analysis.py**: Implementation of our two detection methods as well as performance analysis code
+* **master.py**: Takes care of time syncronization and communication between the slave machines
+* **slave.py**: Reports information to master.py and listens for attack information, floods target with HTTP GET requests, and spoofs IP 
+* **control.py**: Very simple client that sends requests to our server
 
 ###Time Synchronization
 
@@ -51,17 +51,17 @@ Backscatter analysis works by monitoring a specific subset of the Internet addre
 First, we must make several assumptions. Each packet that is received by the victimized host must come from a random source address (models the IP spoofing). Next, we assume that the host responds once per request packet received. Finally, we assume that an attack has a total of m packets.
 
 With our above assumptions, the probability of a given host on the internet receiving an unsolicited response by the victimized host is:
-
-m/2^32
-
+```
+	m/2^32
+```
 If we monitor a subset of n IP addresses, the expectation of observing an attack:
-
-E(x) = nm/2^32 
-
+```
+	E(x) = nm/2^32 
+```
 With that, we can actually estimate the actual rate of the attack:
-
-R>=R’ 2^32/n
-	
+```
+	R>=R’ 2^32/n
+```
 where R’ is the measured average inter-arrival rate of backscatter from the victim, and R is the calculated, extrapolated rate from R’ of the rate of the attack.
 
 With the above calculations, we can monitor the request/response traffic over an extended period of time and identify explicit time frames between which a DDoS might be occurring. One of the accepted ways to do this is through flow based classification of traffic. We can post-process the monitored data and identify series of consecutive packets that share the same target IP address and IP protocol. By identify the first packet as the start of a flow; that flow encapsulates all following packets that are received within a set time delta of the previous packet (say, 5 minutes). We can then filter the flows by the total number of received packets and the total duration of the flow (say, we discard all flows that do not have at least 100 packets and do not last longer than 60 seconds). This way, we essentially filter out the normal traffic that is expected of the victimized host, and isolate the culprit flows that may indicate a DDoS attack.
