@@ -16,6 +16,8 @@ The distributed denial of service (DDoS) project will be divided into two parts.
 	
 ###DDoS Implementation Design
 
+![DDoS Implementation Design](https://raw.githubusercontent.com/kenzshi/DDoSProject/master/DDOSMockup.png)
+
 The implementation of our DDoS network consists of three important parts:
 * Botnet - The botnet will be responsible for carrying out the attack on a server. It consists of a master/slave configuration of computers:
 * Master - The “main” machine in the DDoS attack, the master node will be in charge of sending to and receiving messages from the slave to coordinate the attack. The master node will also perform the time synchronization of the other nodes to make sure that the attack happens at the same time.
