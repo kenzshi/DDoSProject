@@ -8,11 +8,7 @@ Implementation of a DDoS botnet as well as DDoS detection tools, tested on the D
 * Kenny Shi
 * Jeffrey Wang
 
-#Midterm Report
-
-##CS188 Midterm Report: DDoS Project
-Team 3: DDoS Project
-Presented by Calvin Chan, Kacey Ryan, Kenny Shi, and Jeffrey Wang
+#CS188 Midterm Report: DDoS Project
 
 ###Introduction
 
@@ -32,11 +28,11 @@ As these three entities interact with each other and carry out a DDoS attack, we
 ###Technical Design
 
 For the technical aspects of the design, we will be writing the majority of the code in Python. The code will be distributed to machines provided to us by DETERLab. The components of our project are as follows:
-	* server.py: Poor implementation of a server, since we want it to be easily DDoS’d with only a few machines (due to DETERLab limits)
-	* analysis.py: Implementation of our two detection methods as well as performance analysis code
-	* master.py: Takes care of time syncronization and communication between the slave machines
-	* slave.py: Reports information to master.py and listens for attack information, floods target with HTTP GET requests, and spoofs IP 
-	* control.py: Very simple client that sends requests to our server
+* server.py: Poor implementation of a server, since we want it to be easily DDoS’d with only a few machines (due to DETERLab limits)
+* analysis.py: Implementation of our two detection methods as well as performance analysis code
+* master.py: Takes care of time syncronization and communication between the slave machines
+* slave.py: Reports information to master.py and listens for attack information, floods target with HTTP GET requests, and spoofs IP 
+* control.py: Very simple client that sends requests to our server
 
 ###Time Synchronization
 
