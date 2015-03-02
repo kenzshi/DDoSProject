@@ -2,28 +2,36 @@
 set ns [new Simulator]
 source tb_compat.tcl
 
-set student [$ns node]
-tb-set-node-os $student CentOS5
-#tb-set-node-startcmd $student "sudo /share/education/BOTNET_UCLA/install-student >& /tmp/labinstall.log"
+set control [$ns node]
+tb-set-node-os $control CentOS5
+#tb-set-node-startcmd $control "sudo /share/education/BOTNET_UCLA/install-control >& /tmp/labinstall.log"
 
 set bot1 [$ns node]
 tb-set-node-os $bot1 Ubuntu1004-STD
 #tb-set-node-startcmd $bot1 "sudo /share/education/BOTNET_UCLA/install-bot1 >& /tmp/labinstall.log"
 
-set controller [$ns node]
-tb-set-node-os $controller Ubuntu1004-STD
-#tb-set-node-startcmd $controller "sudo /share/education/BOTNET_UCLA/install-controller >& /tmp/labinstall.log"
+set client [$ns node]
+tb-set-node-os $client Ubuntu1004-STD
+#tb-set-node-startcmd $client "sudo /share/education/BOTNET_UCLA/install-client >& /tmp/labinstall.log"
 
 set server [$ns node]
 tb-set-node-os $server Ubuntu1004-STD
 #tb-set-node-startcmd $server "sudo /share/education/BOTNET_UCLA/install-server >& /tmp/labinstall.log"
 
-set lan0 [$ns make-lan "$student $bot1 $server $controller" 100Mb 0ms]
+set bot2 [$ns node]
+tb-set-node-os $server Ubuntu1004-STD
 
-tb-set-ip-lan $controller $lan0 10.1.1.250
-tb-set-ip-lan $student $lan0 10.1.1.20
+set bot3 [$ns node]
+tb-set-node-os $server Ubuntu1004-STD
+
+set lan0 [$ns make-lan "$control $bot1 $server $client $bot2 $bot3" 100Mb 0ms]
+
+tb-set-ip-lan $client $lan0 10.1.1.250
+tb-set-ip-lan $cotrol $lan0 10.1.1.20
 tb-set-ip-lan $server $lan0 10.1.1.50
 tb-set-ip-lan $bot1 $lan0 10.1.1.3
+tb-set-ip-lan $bot2 $lan0 10.1.1.70
+tb-set-ip-lan $bot3 $lan0 10.1.1.100
 
 $ns rtproto Static
 $ns run
