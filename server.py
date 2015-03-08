@@ -11,6 +11,7 @@ class Server():
     self.num_connects_last_interval = 0
     self.avg_connects_per_interval = 0
     self.num_intervals = 0
+    self.ddos_detected = 0
 
     #Creating socket object
     self.serv = socket(AF_INET,SOCK_STREAM)
@@ -35,8 +36,14 @@ class Server():
     return margin
 
   def checkBound(self, error):
-    if self.num_connects_last_interval > self.avg_connects_per_interval + error:
-      print "DDOS WARNING!!"
+    if self.num_connects_last_interval > self.avg_connects_per_interval + error and self.ddos_detected == 0:
+      print "DDOS WARNING"
+      self.ddos_detected = 1
+    elif self.num_connects_last_interval > self.avg_connects_per_interval + error and self.ddos_detected > 0:
+      print "DDOS DETECTED! ERROR:", self.ddos_detected
+      self.ddos_detected += 1
+    else:
+      self.ddos_detected = 0
     print "error bound:", error
 
   def acceptConnections(self):
