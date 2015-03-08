@@ -23,7 +23,7 @@ class Slave():
         #ddos.close()
 
 if __name__ == '__main__':
-  slaveNode = Slave('localhost', 8080)
+  slaveNode = Slave('10.1.1.50', 8080)
 
   while(1):
 #for i in xrange(conn):

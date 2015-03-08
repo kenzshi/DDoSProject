@@ -3,7 +3,7 @@ import time, os, sys, string, threading
 from socket import *  #importing the socket library for network connections
 
 ##Setting up variables
-HOST = 'localhost'
+HOST = '10.1.1.50'
 PORT = 8080
 ADDR = (HOST,PORT)
 BUFSIZE = 2048
