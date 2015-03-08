@@ -2,57 +2,62 @@
 import time, os, sys, string, threading, math
 from socket import *  #importing the socket library for network connections
 
+class Server():
+  def __init__(self, host, port):
+    self.host = host
+    self.port = port
+
+    self.num_connections = 0
+    self.num_connects_last_interval = 0
+    self.avg_connects_per_interval = 0
+    self.num_intervals = 0
+
+    #Creating socket object
+    self.serv = socket(AF_INET,SOCK_STREAM)
+
+    #bind socket to address
+    self.serv.bind((self.host, self.port))
+    self.serv.listen(1) #Setting up the max number of connections we allow as 2, since we want this to be a weak server
+    print 'Server up and running! Listening for incomming connections...'
+
+  def collectData(self):
+    threading.Timer(3.0, self.collectData).start()
+    self.num_intervals += 1
+    print "num connections in last interval", self.num_connects_last_interval
+    self.avg_connects_per_interval = ((self.avg_connects_per_interval * (self.num_intervals-1)) + self.num_connects_last_interval) / self.num_intervals
+    print "avg connections per interval", self.avg_connects_per_interval
+    errorBound = self.avg_connects_per_interval * self.marginOfError(self.num_intervals, 1.96) #95% conf level
+    self.checkBound(errorBound)
+    self.num_connects_last_interval = 0
+
+  def marginOfError(self, sampleSize, critValue):
+    margin = critValue/(2 * math.sqrt(sampleSize))
+    return margin
+
+  def checkBound(self, error):
+    if self.num_connects_last_interval > self.avg_connects_per_interval + error:
+      print "DDOS WARNING!!"
+    print "error bound:", error
+
+  def acceptConnections(self):
+    conn, addr = self.serv.accept() ## accept incoming connection
+    print 'Connected by ', addr, 'Number of connections: ', self.num_connections
+    self.num_connects_last_interval += 1
+    self.num_connections += 1
+    conn.send('THIS MESSAGE WAS SENT FROM THE SERVER')
+
 ##Setting up variables
 HOST = '10.1.1.50'
 PORT = 8080
 ADDR = (HOST,PORT)
 BUFSIZE = 2048
 
-##Creating socket object
-serv = socket(AF_INET,SOCK_STREAM)
+if __name__ == '__main__':
+  victimServer = Server('localhost', 8080)
 
-##bind socket to address
-serv.bind((ADDR))
-serv.listen(1) ##Setting up the max number of connections we allow as 2, since we want this to be a weak server
-print 'Server up and running! Listening for incomming connections...'
+  victimServer.collectData()
 
-n = 1
-num_connects_last_interval = 0
-avg_connects_per_interval = 0
-num_intervals = 0
-
-def collectData():
-  threading.Timer(3.0, collectData).start()
-  global num_intervals
-  num_intervals += 1
-  global num_connects_last_interval
-  print "num connections in last interval", num_connects_last_interval
-  global avg_connects_per_interval
-  avg_connects_per_interval = ((avg_connects_per_interval * (num_intervals-1)) + num_connects_last_interval) / num_intervals
-  print "avg connections per interval", avg_connects_per_interval
-  errorBound = avg_connects_per_interval * marginOfError(num_intervals, 1.96) #95% conf level
-  checkBound(errorBound)
-  num_connects_last_interval = 0
-
-def marginOfError(sampleSize, critValue):
-  margin = critValue/(2 * math.sqrt(sampleSize))
-  return margin
-
-def checkBound(error):
-  global avg_connects_per_interval
-  global num_connects_last_interval
-  if num_connects_last_interval > avg_connects_per_interval + error:
-    print "DDOS WARNING!!"
-  print "error bound:", error
-  
-
-collectData()
-while 1:
-  conn, addr = serv.accept() ## accept incoming connection
-  print 'Connected by ', addr, 'Number of connections: ', n
-  num_connects_last_interval += 1
-  n += 1
-  conn.send('THIS MESSAGE WAS SENT FROM THE SERVER')
+  while 1:
+    victimServer.acceptConnections()
 
 #conn.close()
-

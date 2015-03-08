@@ -13,7 +13,7 @@ class Master():
     self.sock.listen(5)
 
   def connectionAccept(self, port):
-    print "Accepting connections"
+    print('Accepting connection from port: {0}'.format(port))
 
 if __name__ == '__main__':
     port = 8080
