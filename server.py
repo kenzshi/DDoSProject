@@ -18,11 +18,18 @@ print 'Server up and running! Listening for incomming connections...'
 
 n = 1
 num_connects_last_interval = 0
+avg_connects_per_interval = 0
+num_intervals = 0
 
 def collectData():
-  threading.Timer(4.0, collectData).start()
+  threading.Timer(5.0, collectData).start()
+  global num_intervals
+  num_intervals += 1
   global num_connects_last_interval
   print "num connections in last interval", num_connects_last_interval
+  global avg_connects_per_interval
+  avg_connects_per_interval = ((avg_connects_per_interval * (num_intervals-1)) + num_connects_last_interval) / num_intervals
+  print "avg connections per interval", avg_connects_per_interval
   num_connects_last_interval = 0
 
 collectData()

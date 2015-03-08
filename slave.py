@@ -23,4 +23,3 @@ def dos():
 while(1):
 #for i in xrange(conn):
     dos()
-    time.sleep(1)
