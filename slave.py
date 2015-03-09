@@ -1,6 +1,7 @@
 #!/usr/bin/python
-import time, os, sys, string
+import time, os, sys, string, ntplib
 from socket import *  #importing the socket library for network connections
+from time import ctime
 
 class Slave():
     def __init__(self, host, port, sock=None):
@@ -12,12 +13,16 @@ class Slave():
         ip = gethostbyname(self.host)
         self.num_connections = 0
 
+        # get ntp times
+        ntpc = ntplib.NTPClient()
+        ntp_res = ntpc.request('europe.pool.ntp.org', version=3)
+
         # connect to master
         self.masterHost = 'localhost'
         self.masterPort = 8081
         self.sockMaster = socket(AF_INET, SOCK_STREAM)
         self.sockMaster.connect((self.masterHost, self.masterPort))
-        self.sockMaster.send('I want to connect with you')
+        self.sockMaster.send('Slave offset is: {0}'.format(ntp_res.offset))
 
     def acceptMessages(self):
         msg_buf = self.sockMaster.recv(64)
