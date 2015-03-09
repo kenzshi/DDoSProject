@@ -4,25 +4,31 @@ source tb_compat.tcl
 
 set control [$ns node]
 tb-set-node-os $control CentOS5
+tb-set-node-startcmd $control "sudo python /share/seer/v160/experiment-setup.py Basic"
 #tb-set-node-startcmd $control "sudo /share/education/BOTNET_UCLA/install-control >& /tmp/labinstall.log"
 
 set bot1 [$ns node]
 tb-set-node-os $bot1 Ubuntu1004-STD
+tb-set-node-startcmd $bot1 "sudo python /share/seer/v160/experiment-setup.py Basic"
 #tb-set-node-startcmd $bot1 "sudo /share/education/BOTNET_UCLA/install-bot1 >& /tmp/labinstall.log"
 
 set client [$ns node]
 tb-set-node-os $client Ubuntu1004-STD
+tb-set-node-startcmd $client "sudo python /share/seer/v160/experiment-setup.py Basic"
 #tb-set-node-startcmd $client "sudo /share/education/BOTNET_UCLA/install-client >& /tmp/labinstall.log"
 
 set server [$ns node]
 tb-set-node-os $server Ubuntu1004-STD
+tb-set-node-startcmd $server "sudo python /share/seer/v160/experiment-setup.py Basic"
 #tb-set-node-startcmd $server "sudo /share/education/BOTNET_UCLA/install-server >& /tmp/labinstall.log"
 
 set bot2 [$ns node]
-tb-set-node-os $server Ubuntu1004-STD
+tb-set-node-os $bot2 Ubuntu1004-STD
+tb-set-node-startcmd $bot2 "sudo python /share/seer/v160/experiment-setup.py Basic"
 
 set bot3 [$ns node]
-tb-set-node-os $server Ubuntu1004-STD
+tb-set-node-os $bot3 Ubuntu1004-STD
+tb-set-node-startcmd $bot3 "sudo python /share/seer/v160/experiment-setup.py Basic"
 
 set lan0 [$ns make-lan "$control $bot1 $server $client $bot2 $bot3" 100Mb 0ms]
 
