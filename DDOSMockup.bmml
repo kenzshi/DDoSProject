@@ -6,7 +6,7 @@
           <controlProperties>
             <backgroundAlpha>0</backgroundAlpha>
             <color>0</color>
-            <text>Control</text>
+            <text>Client</text>
           </controlProperties>
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="82" y="34" w="-1" h="-1" measuredW="64" measuredH="64" zOrder="1" locked="false" isInGroup="20">
@@ -15,10 +15,10 @@
             <icon>%24ACCOUNT/assets/icon_laptop.png%7Cxlarge</icon>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="69" y="87" w="-1" h="-1" measuredW="105" measuredH="32" zOrder="2" locked="false" isInGroup="20">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="69" y="87" w="-1" h="-1" measuredW="89" measuredH="32" zOrder="2" locked="false" isInGroup="20">
           <controlProperties>
             <size>24</size>
-            <text>control.py</text>
+            <text>client.py</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
@@ -136,7 +136,7 @@
     <control controlID="23" controlTypeID="com.balsamiq.mockups::Arrow" x="239" y="145" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <direction>bottom</direction>
-        <text>Time%20Sync</text>
+        <text>Time%20Sync%20using%20NTP</text>
       </controlProperties>
     </control>
     <control controlID="24" controlTypeID="com.balsamiq.mockups::Arrow" x="239" y="328" w="-1" h="-1" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="-1">
@@ -144,7 +144,7 @@
         <color>6710886</color>
         <curvature>-1</curvature>
         <direction>top</direction>
-        <text>Time%20Sync</text>
+        <text>Time%20Sync%20using%20NTP</text>
       </controlProperties>
     </control>
     <control controlID="25" controlTypeID="com.balsamiq.mockups::Arrow" x="465" y="144" w="139" h="10" measuredW="150" measuredH="100" zOrder="5" locked="false" isInGroup="-1">
@@ -152,7 +152,7 @@
         <curvature>0</curvature>
         <direction>bottom</direction>
         <stroke>dashed</stroke>
-        <text>DoS</text>
+        <text>DoS%20w/%20IP%20Spoof</text>
       </controlProperties>
     </control>
     <control controlID="26" controlTypeID="com.balsamiq.mockups::Arrow" x="404" y="179" w="200" h="46" measuredW="150" measuredH="100" zOrder="6" locked="false" isInGroup="-1">
@@ -160,7 +160,7 @@
         <curvature>0</curvature>
         <direction>bottom</direction>
         <stroke>dashed</stroke>
-        <text>DoS</text>
+        <text>DoS%20w/%20IP%20Spoof</text>
       </controlProperties>
     </control>
     <control controlID="27" controlTypeID="com.balsamiq.mockups::Arrow" x="404" y="204" w="198" h="124" measuredW="150" measuredH="100" zOrder="7" locked="false" isInGroup="-1">
@@ -168,7 +168,7 @@
         <curvature>0</curvature>
         <direction>bottom</direction>
         <stroke>dashed</stroke>
-        <text>DoS</text>
+        <text>DoS%20w/%20IP%20Spoof</text>
       </controlProperties>
     </control>
     <control controlID="28" controlTypeID="com.balsamiq.mockups::Arrow" x="465" y="225" w="138" h="186" measuredW="150" measuredH="100" zOrder="8" locked="false" isInGroup="-1">
@@ -176,7 +176,7 @@
         <curvature>0</curvature>
         <direction>bottom</direction>
         <stroke>dashed</stroke>
-        <text>DoS</text>
+        <text>DoS%20w/%20IP%20Spoof</text>
       </controlProperties>
     </control>
     <control controlID="29" controlTypeID="com.balsamiq.mockups::Arrow" x="711" y="245" w="10" h="133" measuredW="150" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
