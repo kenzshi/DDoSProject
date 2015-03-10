@@ -1,5 +1,6 @@
-import time, datetime, sys, re
+import time, datetime, sys, re,ntplib
 from socket import *  #importing the socket library for network connections
+from time import ctime
 
 class Master():
   def __init__(self, sock=None):
@@ -8,6 +9,10 @@ class Master():
     else:
       self.sock = sock
     self.slaves = {}
+
+    # get ntp times
+    self.ntpc = ntplib.NTPClient()
+    self.ntp_res = self.ntpc.request('europe.pool.ntp.org', version=3)
 
   def listenConnections(self, port):
     print "Listening for connections"
@@ -21,7 +26,7 @@ class Master():
     msg_buf = conn.recv(64)
     if len(msg_buf) > 0:
       print(msg_buf)
-    conn.send('You are connected')
+    conn.send('Master offset is: {0}'.format(self.ntp_res.offset))
     self.slaves[addr] = conn
 
 if __name__ == '__main__':
