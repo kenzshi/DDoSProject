@@ -18,7 +18,7 @@ class Server():
 
     #bind socket to address
     self.serv.bind((self.host, self.port))
-    self.serv.listen(1) #Setting up the max number of connections we allow as 2, since we want this to be a weak server
+    self.serv.listen(5) #Setting up the max number of connections we allow as 2, since we want this to be a weak server
     print 'Server up and running! Listening for incomming connections...'
 
   def collectData(self):
@@ -48,10 +48,13 @@ class Server():
 
   def acceptConnections(self):
     conn, addr = self.serv.accept() ## accept incoming connection
+#    data = conn.recv(1024)
+#    print "Message From " + addr[0] + " : " + data
     print 'Connected by ', addr, 'Number of connections: ', self.num_connections
     self.num_connects_last_interval += 1
     self.num_connections += 1
     conn.send('THIS MESSAGE WAS SENT FROM THE SERVER')
+#    conn.close()
 
 ##Setting up variables
 HOST = '10.1.1.50'
@@ -60,7 +63,7 @@ ADDR = (HOST,PORT)
 BUFSIZE = 2048
 
 if __name__ == '__main__':
-  victimServer = Server('localhost', 8080)
+  victimServer = Server(HOST, PORT)
 
   victimServer.collectData()
 
