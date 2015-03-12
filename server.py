@@ -63,7 +63,7 @@ ADDR = (HOST,PORT)
 BUFSIZE = 2048
 
 if __name__ == '__main__':
-  victimServer = Server(HOST, PORT)
+  victimServer = Server('localhost', PORT)
 
   victimServer.collectData()
 

