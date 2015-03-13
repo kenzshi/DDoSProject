@@ -21,4 +21,4 @@ def generate_traffic():
 
 while(1):
     generate_traffic()
-    time.sleep(random.uniform(0.0005,0.0025))
+    time.sleep(random.uniform(0.01,0.025))
