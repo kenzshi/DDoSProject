@@ -5,7 +5,7 @@ from time import ctime
 ##Setting up variables
 SERVER_HOST = '10.1.1.50'
 SERVER_PORT = 8080
-MS_LISTEN_HOST = '10.1.1.250'
+MS_LISTEN_HOST = '10.1.1.20'
 MS_LISTEN_PORT = 8081
 
 class Master():
