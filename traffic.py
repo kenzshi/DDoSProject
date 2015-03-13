@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import time, socket, os, sys, string
+import time, random, socket, os, sys, string
 
 host='10.1.1.50'
 port=8080
@@ -21,3 +21,4 @@ def generate_traffic():
 
 while(1):
     generate_traffic()
+    time.sleep(random.uniform(0.0005,0.0025))

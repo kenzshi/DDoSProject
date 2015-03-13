@@ -10,7 +10,7 @@ class Server():
     self.num_connections = 0
     self.num_connects_last_interval = 0
     self.avg_connects_per_interval = 0
-    self.num_intervals = 0
+    self.num_intervals = -1
     self.ddos_detected = 0
 
     #Creating socket object
@@ -24,11 +24,12 @@ class Server():
   def collectData(self):
     threading.Timer(3.0, self.collectData).start()
     self.num_intervals += 1
-    print "num connections in last interval", self.num_connects_last_interval
-    self.avg_connects_per_interval = ((self.avg_connects_per_interval * (self.num_intervals-1)) + self.num_connects_last_interval) / self.num_intervals
-    print "avg connections per interval", self.avg_connects_per_interval
-    errorBound = self.avg_connects_per_interval * self.marginOfError(self.num_intervals, 1.96) #95% conf level
-    self.checkBound(errorBound)
+    if self.num_intervals >= 1:
+      print "num connections in last interval", self.num_connects_last_interval
+      self.avg_connects_per_interval = ((self.avg_connects_per_interval * (self.num_intervals-1)) + self.num_connects_last_interval) / self.num_intervals
+      print "avg connections per interval", self.avg_connects_per_interval
+      errorBound = self.avg_connects_per_interval * self.marginOfError(self.num_intervals, 1.96) #95% conf level
+      self.checkBound(errorBound)
     self.num_connects_last_interval = 0
 
   def marginOfError(self, sampleSize, critValue):
@@ -42,6 +43,10 @@ class Server():
     elif self.num_connects_last_interval > self.avg_connects_per_interval + error and self.ddos_detected > 0:
       print "DDOS DETECTED! ERROR:", self.ddos_detected
       self.ddos_detected += 1
+    elif self.num_connects_last_interval < self.avg_connects_per_interval + error and self.ddos_detected > 1:
+      self.ddos_detected = 0
+      self.avg_connects_per_interval = 0
+      self.num_intervals = -1
     else:
       self.ddos_detected = 0
     print "error bound:", error
@@ -50,7 +55,7 @@ class Server():
     conn, addr = self.serv.accept() ## accept incoming connection
 #    data = conn.recv(1024)
 #    print "Message From " + addr[0] + " : " + data
-    print 'Connected by ', addr, 'Number of connections: ', self.num_connections
+#    print 'Connected by ', addr, 'Number of connections: ', self.num_connections
     self.num_connects_last_interval += 1
     self.num_connections += 1
     conn.send('THIS MESSAGE WAS SENT FROM THE SERVER')
