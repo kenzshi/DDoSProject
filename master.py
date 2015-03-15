@@ -44,6 +44,7 @@ class Master():
     ntpc = ntplib.NTPClient()
     for slave_addr, conn in self.slaves.iteritems():
       ntp_res = ntpc.request('10.1.1.50', version=3)
+      print ctime(ntp_res.tx_time)
       conn.send('ATTACK {0} {1} {2}'.format(self.server_ip, self.server_port, ntp_res.offset))
 
   def closeConnection(self):
