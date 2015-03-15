@@ -1,5 +1,7 @@
 #!/usr/bin/python
-import time, os, sys, string, ntplib, socket, random
+import time, os, sys, string, ntplib, random
+from socket import *
+from time import ctime
 import scapy.all as scapy
 
 ##Setting up variables
