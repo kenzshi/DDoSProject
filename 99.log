@@ -1,0 +1,128 @@
+Server up and running! Listening for incomming connections...
+num connections in last interval 6005
+avg connections per interval 6005
+error bound: 7734.44
+num connections in last interval 6004
+avg connections per interval 6004
+error bound: 5468.16421915
+num connections in last interval 7898
+avg connections per interval 6635
+error bound: 4933.96611846
+num connections in last interval 11999
+avg connections per interval 7976
+error bound: 5136.544
+num connections in last interval 12009
+avg connections per interval 8782
+error bound: 5058.52957684
+num connections in last interval 11987
+avg connections per interval 9316
+error bound: 4898.57450326
+num connections in last interval 11450
+avg connections per interval 9620
+error bound: 4683.19148069
+num connections in last interval 6673
+avg connections per interval 9251
+error bound: 4212.6904723
+num connections in last interval 6005
+avg connections per interval 8890
+error bound: 3816.77333333
+num connections in last interval 6003
+avg connections per interval 8601
+error bound: 3503.19901998
+num connections in last interval 6005
+avg connections per interval 8365
+error bound: 3248.51940784
+num connections in last interval 6994
+avg connections per interval 8250
+error bound: 3067.4619802
+num connections in last interval 11997
+avg connections per interval 8538
+DDOS WARNING
+error bound: 3050.00349734
+num connections in last interval 14865
+avg connections per interval 8990
+DDOS DETECTED! ERROR: 1
+error bound: 3094.64999145
+num connections in last interval 27427
+avg connections per interval 10219
+DDOS DETECTED! ERROR: 2
+error bound: 3398.43237717
+num connections in last interval 9911
+avg connections per interval 10199
+error bound: 3284.078
+num connections in last interval 22410
+avg connections per interval 22411
+error bound: 28865.368
+num connections in last interval 14369
+avg connections per interval 18390
+error bound: 16748.7574934
+num connections in last interval 8887
+avg connections per interval 15222
+error bound: 11319.4924273
+num connections in last interval 8576
+avg connections per interval 13560
+error bound: 8732.64
+num connections in last interval 16019
+avg connections per interval 14051
+error bound: 8093.53212072
+num connections in last interval 12009
+avg connections per interval 13710
+error bound: 7209.04427219
+num connections in last interval 12005
+avg connections per interval 13466
+error bound: 6555.49443648
+num connections in last interval 11870
+avg connections per interval 13266
+error bound: 6041.02819214
+num connections in last interval 8298
+avg connections per interval 12714
+error bound: 5458.544
+num connections in last interval 6006
+avg connections per interval 12043
+error bound: 4905.13031015
+num connections in last interval 6004
+avg connections per interval 11494
+error bound: 4463.65595621
+num connections in last interval 6005
+avg connections per interval 11036
+error bound: 4103.33459558
+num connections in last interval 6814
+avg connections per interval 10711
+error bound: 3826.25760834
+num connections in last interval 14783
+avg connections per interval 11001
+error bound: 3786.90150789
+num connections in last interval 4881
+avg connections per interval 10593
+error bound: 3522.80988075
+num connections in last interval 12343
+avg connections per interval 10702
+error bound: 3446.044
+num connections in last interval 5698
+avg connections per interval 10407
+error bound: 3250.99990568
+num connections in last interval 11811
+avg connections per interval 10485
+error bound: 3183.08360192
+num connections in last interval 12061
+avg connections per interval 10568
+error bound: 3122.7115325
+num connections in last interval 22777
+avg connections per interval 11178
+DDOS WARNING
+error bound: 3219.3260994
+num connections in last interval 6357
+avg connections per interval 10948
+error bound: 3077.09570745
+num connections in last interval 6005
+avg connections per interval 10723
+error bound: 2944.56285055
+num connections in last interval 9851
+avg connections per interval 10685
+error bound: 2869.63375029
+num connections in last interval 12009
+avg connections per interval 10740
+error bound: 2823.67379589
+num connections in last interval 5103
+avg connections per interval 10514
+error bound: 2708.4064
