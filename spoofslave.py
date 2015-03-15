@@ -2,7 +2,8 @@
 import time, os, sys, string, ntplib
 from socket import *  #importing the socket library for network connections
 from time import ctime
-from scapy.all import * as scapy
+from scapy.all import *
+conf.verb=0
 
 ##Setting up variables
 SERVER_HOST = '10.1.1.50'
