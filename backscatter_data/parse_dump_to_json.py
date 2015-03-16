@@ -1,7 +1,7 @@
 import re
 import json
 
-f = open('data2.dat', 'r')
+f = open('data_large.dat', 'r')
 dump = f.read()
 p = re.compile(r'(\d{2}:\d{2}:\d{2})')
 dump_list = filter(None, p.split(dump))
