@@ -40,7 +40,7 @@ class Slave():
               self.doTheDos(host, int(port), float(offset))
 
     def doTheDos(self, host, port, offset):
-        for _ in range(0, 50):
+        for _ in range(0, 60000):
           self.dos(host, port)
 
     def dos(self, host, port):
