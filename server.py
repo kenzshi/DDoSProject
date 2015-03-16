@@ -52,9 +52,8 @@ class Server():
     print "error bound:", error
 
   def acceptConnections(self):
-    # conn, addr = self.serv.accept() ## accept incoming connection
-    # data = conn.recv(1024)
-    data, addr = self.serv.recvfrom(1024)
+    conn, addr = self.serv.accept() ## accept incoming connection
+    data = conn.recv(1024)
     print "Message From " + addr[0] + " : " + data
     print 'Connected by ', addr, 'Number of connections: ', self.num_connections
     self.num_connects_last_interval += 1

