@@ -56,6 +56,7 @@ class Server():
     data = conn.recv(1024)
     print "Message From " + addr[0] + " : " + data
     print 'Connected by ', addr, 'Number of connections: ', self.num_connections
+    print ">>>>>>>>>>>>>"
     self.num_connects_last_interval += 1
     self.num_connections += 1
     conn.send('THIS MESSAGE WAS SENT FROM THE SERVER')
