@@ -1,0 +1,3048 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite>
+ <testcase classname="Informations on Scapy"
+           name="Get conf"
+           duration="0">
+</testcase>
+ <testcase classname="Informations on Scapy"
+           name="List layers"
+           duration="0">
+</testcase>
+ <testcase classname="Informations on Scapy"
+           name="List commands"
+           duration="0">
+</testcase>
+ <testcase classname="Informations on Scapy"
+           name="Configuration"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="Building some packets packet"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="Manipulating some packets"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="Checking overloads"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="sprintf() function"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="sprintf() function"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="haslayer function"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="getlayer function"
+           duration="0">
+</testcase>
+ <testcase classname="Basic tests"
+           name="equality"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on padding"
+           name="Padding assembly"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on padding"
+           name="Padding and length computation"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on basic fields"
+           name="MACField class"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on basic fields"
+           name="IPField class"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on default value changes mechanism"
+           name="Creation of an IPv3 class from IP class with different default values"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on default value changes mechanism"
+           name="Test of IPv3 class"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on ActionField"
+           name="Creation of a layer with ActionField"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on ActionField"
+           name="Triggering action"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldLenField"
+           name="Creation of a layer with FieldLenField"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldLenField"
+           name="Assembly of an empty packet"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldLenField"
+           name="Assembly of non empty packet"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldLenField"
+           name="Disassembly"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldLenField"
+           name="BitFieldLenField test"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldListField"
+           name="Creation of a layer"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldListField"
+           name="Assembly of an empty packet"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldListField"
+           name="Assembly of a non-empty packet"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldListField"
+           name="Disassemble"
+           duration="0">
+</testcase>
+ <testcase classname="Tests on FieldListField"
+           name="Manipulate"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField"
+           name="Create a layer"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField"
+           name="Test the PacketListField assembly"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField"
+           name="Test the PacketListField assembly 2"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField"
+           name="Test disassembly"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField"
+           name="Nested PacketListField"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField tests"
+           name="Create a layer"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField tests"
+           name="Test the PacketListField assembly"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField tests"
+           name="Test the PacketListField assembly 2"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField tests"
+           name="Test disassembly"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField tests"
+           name="Nested PacketListField"
+           duration="0">
+</testcase>
+ <testcase classname="PacketListField tests"
+           name="Complex packet"
+           duration="0">
+</testcase>
+ <testcase classname="ISAKMP transforms test"
+           name="ISAKMP creation"
+           duration="0">
+</testcase>
+ <testcase classname="ISAKMP transforms test"
+           name="ISAKMP manipulation"
+           duration="0">
+</testcase>
+ <testcase classname="ISAKMP transforms test"
+           name="ISAKMP assembly"
+           duration="0">
+</testcase>
+ <testcase classname="ISAKMP transforms test"
+           name="ISAKMP disassembly"
+           duration="0">
+</testcase>
+ <testcase classname="TFTP tests"
+           name="TFTP Options"
+           duration="0">
+</testcase>
+ <testcase classname="Dot11 tests"
+           name="WEP tests"
+           duration="0">
+</testcase>
+ <testcase classname="SNMP tests"
+           name="SNMP assembling"
+           duration="0">
+</testcase>
+ <testcase classname="SNMP tests"
+           name="SNMP disassembling"
+           duration="0">
+</testcase>
+ <testcase classname="X509 tests"
+           name="X509 certificate assembling"
+           duration="0">
+</testcase>
+ <testcase classname="X509 tests"
+           name="Small X509 certificate disassembling"
+           duration="0">
+</testcase>
+ <testcase classname="X509 tests"
+           name="Big X509 certificate disassembling"
+           duration="0">
+</testcase>
+ <testcase classname="Network tests"
+           name="Sending and receiving an ICMP"
+           duration="0">
+</testcase>
+ <testcase classname="Network tests"
+           name="DNS request"
+           duration="0">
+</testcase>
+ <testcase classname="More complex tests"
+           name="Implicit logic"
+           duration="0">
+</testcase>
+ <testcase classname="Real usages"
+           name="Port scan"
+           duration="0">
+</testcase>
+ <testcase classname="Real usages"
+           name="Traceroute function"
+           duration="0">
+</testcase>
+ <testcase classname="Real usages"
+           name="Result manipulation"
+           duration="0">
+</testcase>
+ <testcase classname="Real usages"
+           name="DNS packet manipulation"
+           duration="0">
+</testcase>
+ <testcase classname="Real usages"
+           name="Arping"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Simple automaton"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Simple automaton Tests"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Simple automaton stuck test"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton state overloading"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton condition overloading"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton action overloading"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton priorities"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton test same action for many conditions"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton test io event"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton test io event from external fd"
+           duration="0">
+</testcase>
+ <testcase classname="Automaton tests"
+           name="Automaton test interception_points, and restart"
+           duration="0">
+</testcase>
+ <testcase classname="Test IP options"
+           name="IP options individual assembly"
+           duration="0">
+</testcase>
+ <testcase classname="Test IP options"
+           name="IP options individual dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test IP options"
+           name="IP assembly and dissection with options"
+           duration="0">
+</testcase>
+ <testcase classname="Test PPP"
+           name="PPP/HDLC"
+           duration="0">
+</testcase>
+ <testcase classname="Test PPP"
+           name="PPP IPCP"
+           duration="0">
+</testcase>
+ <testcase classname="Test PPP"
+           name="PPP ECP"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class basic build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class basic dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class with basic TCP stacked - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class with basic TCP stacked - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class with TCP and TCP data - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class with TCP and TCP data - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class binding with Ethernet - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6 Class binding with Ethernet - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6ExtHdrRouting Class - No address - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6ExtHdrRouting Class - One address - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6ExtHdrRouting Class - Multiple Addresses - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6ExtHdrRouting Class - Specific segleft (2->1) - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6 Class"
+           name="IPv6ExtHdrRouting Class - Specific segleft (2->0) - build"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_get6to4Prefix()"
+           name="Test in6_get6to4Prefix() - 0.0.0.0 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_get6to4Prefix()"
+           name="Test in6_get6to4Prefix() - 255.255.255.255 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_get6to4Prefix()"
+           name="Test in6_get6to4Prefix() - 1.1.1.1 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_get6to4Prefix()"
+           name="Test in6_get6to4Prefix() - invalid address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test in6_6to4ExtractAddr() - 2002:: address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test in6_6to4ExtractAddr() - 255.255.255.255 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test in6_6to4ExtractAddr() -  2002:101:101::  address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test in6_6to4ExtractAddr() - invalid address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getLinkScopedMcastAddr() : default generation"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getLinkScopedMcastAddr() : different valid scope values"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getLinkScopedMcastAddr() : grpid in different formats"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 2)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 3)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 4)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 5)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 6)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 2)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 3)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 4)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 5)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_mactoifaceid() conversion function (test 6)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_addrtomac() conversion function (test 1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_addrtomac() conversion function (test 2)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_addrtomac() conversion function (test 3)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_addrtomac() conversion function (test 4)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_addrtomac() conversion function (test 5)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_addrtomac() conversion function (test 6)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test in6_getRandomizedIfaceId"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test RFC 1924 function - in6_ctop() basic test"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test RFC 1924 function - in6_ctop() with character outside charset"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test RFC 1924 function - in6_ctop() with bad length address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test RFC 1924 function - in6_ptoc() basic test"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test RFC 1924 function - in6_ptoc() basic test"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="Test RFC 1924 function - in6_ptoc() with bad input"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - 6to4 addresses"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Assignable Unicast global address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Multicast global address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Multicast local address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Unicast Link-Local address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Loopback address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Unspecified address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Unassigned Global Unicast address"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Weird address (FE::1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Weird address (FE8::1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Weird address (1::1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="in6_getAddrType - Weird address (1000::1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6DestUnreach Class - Basic Build (no argument)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6DestUnreach Class - Basic Build over IPv6 (for cksum and overload)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6DestUnreach Class - Basic Build over IPv6 with some payload"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6DestUnreach Class - Dissection with default values and some payload"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6DestUnreach Class - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6DestUnreach Class - checksum computation related stuff"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6PacketTooBig Class - Basic Build (no argument)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6PacketTooBig Class - Basic Build over IPv6 (for cksum and overload)"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6PacketTooBig Class - Basic Build over IPv6 with some payload"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6PacketTooBig Class - Dissection with default values and some payload"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6PacketTooBig Class - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test in6_6to4ExtractAddr()"
+           name="ICMPv6PacketTooBig Class - checksum computation related stuff"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoRequest Class"
+           name="ICMPv6EchoRequest - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoRequest Class"
+           name="ICMPv6EchoRequest - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoRequest Class"
+           name="ICMPv6EchoRequest - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoRequest Class"
+           name="ICMPv6EchoRequest - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoRequest Class"
+           name="ICMPv6EchoRequest - Automatic checksum computation and field overloading (build)"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoRequest Class"
+           name="ICMPv6EchoRequest - Automatic checksum computation and field overloading (dissection)"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoReply - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoReply - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoReply - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoReply - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoReply - Automatic checksum computation and field overloading (build)"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoReply - Automatic checksum computation and field overloading (dissection)"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoRequest and ICMPv6EchoReply - hashret() test 1"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoRequest and ICMPv6EchoReply - hashret() test 2"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoRequest and ICMPv6EchoReply - hashret() test 3"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoRequest and ICMPv6EchoReply - hashret() test 4"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoRequest and ICMPv6EchoReply - answers() test 5"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6EchoRequest and ICMPv6EchoReply - answers() test 6"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Advertisement - Basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Advertisement - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Advertisement - Basic Dissection and overloading mechanisms"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Solicitation - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Solicitation - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Solicitation - Basic Dissection and overloading mechanisms"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Termination Basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Termination - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6EchoReply Class"
+           name="ICMPv6MRD_Termination - Basic Dissection and overloading mechanisms"
+           duration="0">
+</testcase>
+ <testcase classname="Test HBHOptUnknown Class"
+           name="HBHOptUnknown - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test HBHOptUnknown Class"
+           name="HBHOptUnknown - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test HBHOptUnknown Class"
+           name="HBHOptUnknown - Automatic optlen computation"
+           duration="0">
+</testcase>
+ <testcase classname="Test HBHOptUnknown Class"
+           name="HBHOptUnknown - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test HBHOptUnknown Class"
+           name="HBHOptUnknown - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test Pad1 Class"
+           name="Pad1 - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test Pad1 Class"
+           name="Pad1 - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test PadN Class"
+           name="PadN - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test PadN Class"
+           name="PadN - Optlen Automatic computation"
+           duration="0">
+</testcase>
+ <testcase classname="Test PadN Class"
+           name="PadN - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test PadN Class"
+           name="PadN - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test PadN Class"
+           name="PadN - Instantiation with forced optlen"
+           duration="0">
+</testcase>
+ <testcase classname="Test RouterAlert Class (RFC 2711)"
+           name="RouterAlert - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test RouterAlert Class (RFC 2711)"
+           name="RouterAlert - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test RouterAlert Class (RFC 2711)"
+           name="RouterAlert - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test RouterAlert Class (RFC 2711)"
+           name="RouterAlert - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test Jumbo Class (RFC 2675)"
+           name="Jumbo - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test Jumbo Class (RFC 2675)"
+           name="Jumbo - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test Jumbo Class (RFC 2675)"
+           name="Jumbo - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test Jumbo Class (RFC 2675)"
+           name="Jumbo - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test HAO Class (RFC 3775)"
+           name="HAO - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test HAO Class (RFC 3775)"
+           name="HAO - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test HAO Class (RFC 3775)"
+           name="HAO - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test HAO Class (RFC 3775)"
+           name="HAO - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with HAO option"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with RouterAlert option"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with Jumbo option"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with Pad1 option"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with PadN option"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with Jumbo, RouterAlert, HAO"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with HAO, Jumbo, RouterAlert"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Instantiation with RouterAlert, HAO, Jumbo"
+           duration="0">
+</testcase>
+ <testcase classname="Test IPv6ExtHdrHopByHop()"
+           name="IPv6ExtHdrHopByHop - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RS() class - ICMPv6 Type 133 Code 0"
+           name="ICMPv6ND_RS - Basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RS() class - ICMPv6 Type 133 Code 0"
+           name="ICMPv6ND_RS - Basic instantiation with empty dst in IPv6 underlayer"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RS() class - ICMPv6 Type 133 Code 0"
+           name="ICMPv6ND_RS - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RS() class - ICMPv6 Type 133 Code 0"
+           name="ICMPv6ND_RS - Basic instantiation with empty dst in IPv6 underlayer"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RA() class - ICMPv6 Type 134 Code 0"
+           name="ICMPv6ND_RA - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RA() class - ICMPv6 Type 134 Code 0"
+           name="ICMPv6ND_RA - Basic instantiation with empty dst in IPv6 underlayer"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RA() class - ICMPv6 Type 134 Code 0"
+           name="ICMPv6ND_RA - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test ICMPv6ND_RA() class - ICMPv6 Type 134 Code 0"
+           name="ICMPv6ND_RA - Basic instantiation with empty dst in IPv6 underlayer"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NS Class Test"
+           name="ICMPv6ND_NS - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NS Class Test"
+           name="ICMPv6ND_NS - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NS Class Test"
+           name="ICMPv6ND_NS - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NS Class Test"
+           name="ICMPv6ND_NS - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NS Class Test"
+           name="ICMPv6ND_NS - IPv6 layer fields overloading"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NA Class Test"
+           name="ICMPv6ND_NA - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NA Class Test"
+           name="ICMPv6ND_NA - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NA Class Test"
+           name="ICMPv6ND_NA - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NA Class Test"
+           name="ICMPv6ND_NA - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_NA Class Test"
+           name="ICMPv6ND_NS - IPv6 layer fields overloading"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6ND_ND/ICMPv6ND_ND matching test"
+           name="ICMPv6ND_ND/ICMPv6ND_ND matching - test 1"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptUnknown Class Test"
+           name="ICMPv6NDOptUnknown - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptUnknown Class Test"
+           name="ICMPv6NDOptUnknown - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptUnknown Class Test"
+           name="ICMPv6NDOptUnknown - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptUnknown Class Test"
+           name="ICMPv6NDOptUnknown - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcLLAddr Class Test"
+           name="ICMPv6NDOptSrcLLAddr - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcLLAddr Class Test"
+           name="ICMPv6NDOptSrcLLAddr - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcLLAddr Class Test"
+           name="ICMPv6NDOptSrcLLAddr - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcLLAddr Class Test"
+           name="ICMPv6NDOptSrcLLAddr - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptDstLLAddr Class Test"
+           name="ICMPv6NDOptDstLLAddr - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptDstLLAddr Class Test"
+           name="ICMPv6NDOptDstLLAddr - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptDstLLAddr Class Test"
+           name="ICMPv6NDOptDstLLAddr - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptDstLLAddr Class Test"
+           name="ICMPv6NDOptDstLLAddr - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptPrefixInfo Class Test"
+           name="ICMPv6NDOptPrefixInfo - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptPrefixInfo Class Test"
+           name="ICMPv6NDOptPrefixInfo - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptPrefixInfo Class Test"
+           name="ICMPv6NDOptPrefixInfo - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptPrefixInfo Class Test"
+           name="ICMPv6NDOptPrefixInfo - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRedirectedHdr Class Test"
+           name="ICMPv6NDOptRedirectedHdr - Basic Instantiation"
+           duration="0">
+<error><CDATA[[>>> str(ICMPv6NDOptRedirectedHdr()) == '\x04\x00\x00\x00'
+False
+]]></error>
+</testcase>
+ <testcase classname="ICMPv6NDOptRedirectedHdr Class Test"
+           name="ICMPv6NDOptRedirectedHdr - Instantiation with specific values"
+           duration="0">
+<error><CDATA[[>>> str(ICMPv6NDOptRedirectedHdr(len=0xff, res=0x1111, pkt="somestringthatisnotanipv6packet")) == '\x04\xff\x11\x11somestringthatisnotanipv6pac'
+False
+]]></error>
+</testcase>
+ <testcase classname="ICMPv6NDOptRedirectedHdr Class Test"
+           name="ICMPv6NDOptRedirectedHdr - Instantiation with simple IPv6 packet (no upper layer)"
+           duration="0">
+<error><CDATA[[>>> str(ICMPv6NDOptRedirectedHdr(pkt=IPv6())) == '\x04\x05\x00\x00`\x00\x00\x00\x00\x00;@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+False
+]]></error>
+</testcase>
+ <testcase classname="ICMPv6NDOptRedirectedHdr Class Test"
+           name="ICMPv6NDOptRedirectedHdr - Basic Dissection"
+           duration="0">
+<error><CDATA[[>>> a=ICMPv6NDOptRedirectedHdr('\x04\x00\x00\x00')
+>>> a.type == 4 and a.len == 0 and a.res == 0 and a.pkt == ""
+False
+]]></error>
+</testcase>
+ <testcase classname="ICMPv6NDOptRedirectedHdr Class Test"
+           name="ICMPv6NDOptRedirectedHdr - Disssection with specific values"
+           duration="0">
+<error><CDATA[[>>> a=ICMPv6NDOptRedirectedHdr('\x04\xff\x11\x11somestringthatisnotanipv6pac')
+>>> a.type == 4 and a.len == 255 and a.res == 0x1111 and isinstance(a.pkt, Raw) and a.pkt.load == "somestringthatisnotanipv6pac"
+False
+]]></error>
+</testcase>
+ <testcase classname="ICMPv6NDOptRedirectedHdr Class Test"
+           name="ICMPv6NDOptRedirectedHdr - Dissection with cut IPv6 Header"
+           duration="0">
+<error><CDATA[[>>> a=ICMPv6NDOptRedirectedHdr('\x04\x05\x00\x00`\x00\x00\x00\x00\x00;@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+>>> a.type == 4 and a.len == 5 and a.res == 0 and isinstance(a.pkt, Raw) and a.pkt.load == '`\x00\x00\x00\x00\x00;@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00'
+False
+]]></error>
+</testcase>
+ <testcase classname="ICMPv6NDOptMTU Class Test"
+           name="ICMPv6NDOptMTU - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptMTU Class Test"
+           name="ICMPv6NDOptMTU - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptMTU Class Test"
+           name="ICMPv6NDOptMTU - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptMTU Class Test"
+           name="ICMPv6NDOptMTU - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptShortcutLimit Class Test (RFC2491)"
+           name="ICMPv6NDOptShortcutLimit - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptShortcutLimit Class Test (RFC2491)"
+           name="ICMPv6NDOptShortcutLimit - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptShortcutLimit Class Test (RFC2491)"
+           name="ICMPv6NDOptShortcutLimit - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptShortcutLimit Class Test (RFC2491)"
+           name="ICMPv6NDOptShortcutLimit - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptAdvInterval Class Test"
+           name="ICMPv6NDOptAdvInterval - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptAdvInterval Class Test"
+           name="ICMPv6NDOptAdvInterval - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptAdvInterval Class Test"
+           name="ICMPv6NDOptAdvInterval - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptAdvInterval Class Test"
+           name="ICMPv6NDOptAdvInterval - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptHAInfo Class Test"
+           name="ICMPv6NDOptHAInfo - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptHAInfo Class Test"
+           name="ICMPv6NDOptHAInfo - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptHAInfo Class Test"
+           name="ICMPv6NDOptHAInfo - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptHAInfo Class Test"
+           name="ICMPv6NDOptHAInfo - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcAddrList Class Test"
+           name="ICMPv6NDOptSrcAddrList - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcAddrList Class Test"
+           name="ICMPv6NDOptSrcAddrList - Instantiation with specific values (auto len)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcAddrList Class Test"
+           name="ICMPv6NDOptSrcAddrList - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcAddrList Class Test"
+           name="ICMPv6NDOptSrcAddrList - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcAddrList Class Test"
+           name="ICMPv6NDOptSrcAddrList - Dissection with specific values (auto len)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptSrcAddrList Class Test"
+           name="ICMPv6NDOptSrcAddrList - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptTgtAddrList Class Test"
+           name="ICMPv6NDOptTgtAddrList - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptTgtAddrList Class Test"
+           name="ICMPv6NDOptTgtAddrList - Instantiation with specific values (auto len)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptTgtAddrList Class Test"
+           name="ICMPv6NDOptTgtAddrList - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptTgtAddrList Class Test"
+           name="ICMPv6NDOptTgtAddrList - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptTgtAddrList Class Test"
+           name="ICMPv6NDOptTgtAddrList - Dissection with specific values (auto len)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptTgtAddrList Class Test"
+           name="ICMPv6NDOptTgtAddrList - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptIPAddr Class Test (RFC 4068)"
+           name="ICMPv6NDOptIPAddr - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptIPAddr Class Test (RFC 4068)"
+           name="ICMPv6NDOptIPAddr - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptIPAddr Class Test (RFC 4068)"
+           name="ICMPv6NDOptIPAddr - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptIPAddr Class Test (RFC 4068)"
+           name="ICMPv6NDOptIPAddr - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptNewRtrPrefix Class Test (RFC 4068)"
+           name="ICMPv6NDOptNewRtrPrefix - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptNewRtrPrefix Class Test (RFC 4068)"
+           name="ICMPv6NDOptNewRtrPrefix - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptNewRtrPrefix Class Test (RFC 4068)"
+           name="ICMPv6NDOptNewRtrPrefix - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptNewRtrPrefix Class Test (RFC 4068)"
+           name="ICMPv6NDOptNewRtrPrefix - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptLLA Class Test (RFC 4068)"
+           name="ICMPv6NDOptLLA - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptLLA Class Test (RFC 4068)"
+           name="ICMPv6NDOptLLA - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptLLA Class Test (RFC 4068)"
+           name="ICMPv6NDOptLLA - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptLLA Class Test (RFC 4068)"
+           name="ICMPv6NDOptLLA - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Instantiation with forced prefix but no length"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Instantiation with forced length values (1/4)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Instantiation with forced length values (2/4)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Instantiation with forced length values (3/4)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Instantiation with forced length values (4/4)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRouteInfo Class Test"
+           name="ICMPv6NDOptRouteInfo - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptMAP Class Test"
+           name="ICMPv6NDOptMAP - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptMAP Class Test"
+           name="ICMPv6NDOptMAP - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptMAP Class Test"
+           name="ICMPv6NDOptMAP - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptMAP Class Test"
+           name="ICMPv6NDOptMAP - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRDNSS Class Test"
+           name="ICMPv6NDOptRDNSS - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRDNSS Class Test"
+           name="ICMPv6NDOptRDNSS - Basic instantiation with 1 DNS address"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRDNSS Class Test"
+           name="ICMPv6NDOptRDNSS - Basic instantiation with 2 DNS addresses"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRDNSS Class Test"
+           name="ICMPv6NDOptRDNSS - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRDNSS Class Test"
+           name="ICMPv6NDOptRDNSS - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRDNSS Class Test"
+           name="ICMPv6NDOptRDNSS - Dissection (with 1 DNS address)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptRDNSS Class Test"
+           name="ICMPv6NDOptRDNSS - Dissection (with 2 DNS addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptEFA Class Test"
+           name="ICMPv6NDOptEFA - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="ICMPv6NDOptEFA Class Test"
+           name="ICMPv6NDOptEFA - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryNOOP"
+           name="ICMPv6NIQueryNOOP - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryNOOP"
+           name="ICMPv6NIQueryNOOP - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - single label DNS name (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - single label DNS name"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - fqdn (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - fqdn"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - IPv6 address (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - IPv6 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - IPv4 address (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryName"
+           name="ICMPv6NIQueryName - IPv4 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - single label DNS name (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - single label DNS name"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - fqdn (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - fqdn"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - IPv6 address (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - IPv6 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - IPv4 address (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv6"
+           name="ICMPv6NIQueryIPv6 - IPv4 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - single label DNS name (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - single label DNS name"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - fqdn (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - fqdn"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - IPv6 address (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - IPv6 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - IPv4 address (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIQueryIPv4"
+           name="ICMPv6NIQueryIPv4 - IPv4 address"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Flags tests"
+           name="ICMPv6NIQuery* - flags handling (Test 1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Flags tests"
+           name="ICMPv6NIQuery* - flags handling (Test 2)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Flags tests"
+           name="ICMPv6NIReply* - flags handling (Test 1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Flags tests"
+           name="ICMPv6NIReply* - flags handling (Test 2)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Flags tests"
+           name="ICMPv6NIQuery* - Flags Default values"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Flags tests"
+           name="ICMPv6NIReply* - Flags Default values"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv6 - dispatch with nothing in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv6 - dispatch with IPv6 address in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv6 - dispatch with IPv4 address in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv6 - dispatch with name in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryName - dispatch with nothing in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryName - dispatch with IPv6 address in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryName - dispatch with IPv4 address in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryName - dispatch with name in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv4 - dispatch with nothing in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv4 - dispatch with IPv6 address in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv4 - dispatch with IPv6 address in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIQueryIPv4 - dispatch with name in data"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIReplyName - dispatch"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIReplyIPv6 - dispatch"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIReplyIPv4 - dispatch"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIReplyRefuse - dispatch"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - Dispatching"
+           name="ICMPv6NIReplyUnknown - dispatch"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - single DNS name without hint => understood as string (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - single DNS name without hint => understood as string"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - fqdn without hint => understood as string (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - fqdn without hint => understood as string"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - IPv6 address without hint => understood as string (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - IPv6 address without hint => understood as string"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - IPv4 address without hint => understood as string (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyNOOP"
+           name="ICMPv6NIReplyNOOP - IPv4 address without hint => understood as string"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - single label DNS name as a string (without ttl) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - single label DNS name as a string (without ttl)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - fqdn name as a string (without ttl) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - fqdn name as a string (without ttl)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - list of 2 single label DNS names (without ttl) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - list of 2 single label DNS names (without ttl)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - [ttl, single-label, single-label, fqdn] (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyName"
+           name="ICMPv6NIReplyName - [ttl, single-label, single-label, fqdn]"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - one IPv6 address without TTL (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - one IPv6 address without TTL"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - one IPv6 address without TTL (as a list)  (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - one IPv6 address without TTL (as a list)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - one IPv6 address with TTL  (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - one IPv6 address with TTL"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - two IPv6 addresses as a list of strings (without TTL) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - two IPv6 addresses as a list of strings (without TTL)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - two IPv6 addresses as a list (first with ttl, second without) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv6"
+           name="ICMPv6NIReplyIPv6 - two IPv6 addresses as a list (first with ttl, second without)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - one IPv4 address without TTL (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - one IPv4 address without TTL"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - one IPv4 address without TTL (as a list) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - one IPv4 address without TTL (as a list)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - one IPv4 address with TTL (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - one IPv4 address with TTL (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - two IPv4 addresses as a list of strings (without TTL)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - two IPv4 addresses as a list of strings (without TTL) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - two IPv4 addresses as a list (first with ttl, second without)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyIPv4"
+           name="ICMPv6NIReplyIPv4 - two IPv4 addresses as a list (first with ttl, second without) (internal)"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyRefuse"
+           name="ICMPv6NIReplyRefuse - basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyRefuse"
+           name="ICMPv6NIReplyRefuse - basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyUnknown"
+           name="ICMPv6NIReplyUnknown - basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test Node Information Query - ICMPv6NIReplyUnknown"
+           name="ICMPv6NIReplyRefuse - basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="IPv6ExtHdrFragment Class Test"
+           name="IPv6ExtHdrFragment - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="IPv6ExtHdrFragment Class Test"
+           name="IPv6ExtHdrFragment - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="IPv6ExtHdrFragment Class Test"
+           name="IPv6ExtHdrFragment - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="IPv6ExtHdrFragment Class Test"
+           name="IPv6ExtHdrFragment - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test fragment6 function"
+           name="fragment6 - test against a long TCP packet with a 1280 MTU"
+           duration="0">
+</testcase>
+ <testcase classname="Test defragment6 function"
+           name="defragment6 - test against a long TCP packet fragmented with a 1280 MTU"
+           duration="0">
+</testcase>
+ <testcase classname="Test defragment6 function"
+           name="defragment6 - test against a large TCP packet fragmented with a 1280 bytes MTU and missing fragments"
+           duration="0">
+</testcase>
+ <testcase classname="Test defragment6 function"
+           name="defragment6 - test against a TCP packet fragmented with a 800 bytes MTU and missing fragments"
+           duration="0">
+</testcase>
+ <testcase classname="Test Route6 class"
+           name="Route6 - Route6 flushing"
+           duration="0">
+</testcase>
+ <testcase classname="Test Route6 class"
+           name="Route6 - Route6.route"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LLT"
+           name="DUID_LLT basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LLT"
+           name="DUID_LLT basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LLT"
+           name="DUID_LLT build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LLT"
+           name="DUID_LLT basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LLT"
+           name="DUID_LLT dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_EN"
+           name="DUID_EN basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_EN"
+           name="DUID_EN basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_EN"
+           name="DUID_EN build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_EN"
+           name="DUID_EN basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_EN"
+           name="DUID_EN dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LL"
+           name="DUID_LL basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LL"
+           name="DUID_LL basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LL"
+           name="DUID_LL build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LL"
+           name="DUID_LL basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 DUID_LL"
+           name="DUID_LL with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Opt Unknown"
+           name="DHCP6 Opt Unknown basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Opt Unknown"
+           name="DHCP6 Opt Unknown basic build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Opt Unknown"
+           name="DHCP6 Opt Unknown - len computation test"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId instantiation with DUID_LL"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId instantiation with DUID_LLT"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId instantiation with DUID_EN"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId instantiation with specified length"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId instantiation with specified length"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId dissection with specific duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId dissection with specific DUID_LL as duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId dissection with specific DUID_LLT as duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Client Identifier option"
+           name="DHCP6OptClientId dissection with specific DUID_EN as duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId basic build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId instantiation with DUID_LL"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId instantiation with DUID_LLT"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId instantiation with DUID_EN"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId instantiation with specified length"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId dissection with specific duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId dissection with specific DUID_LL as duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId dissection with specific DUID_LLT as duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Server Identifier option"
+           name="DHCP6OptServerId dissection with specific DUID_EN as duid value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 IA Address Option (IA_TA or IA_NA suboption)"
+           name="DHCP6OptIAAddress - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 IA Address Option (IA_TA or IA_NA suboption)"
+           name="DHCP6OptIAAddress - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 IA Address Option (IA_TA or IA_NA suboption)"
+           name="DHCP6OptIAAddress - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 IA Address Option (IA_TA or IA_NA suboption)"
+           name="DHCP6OptIAAddress - Instantiation with specific values (default optlen computation)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 IA Address Option (IA_TA or IA_NA suboption)"
+           name="DHCP6OptIAAddress - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Non-temporary Addresses Option"
+           name="DHCP6OptIA_NA - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Non-temporary Addresses Option"
+           name="DHCP6OptIA_NA - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Non-temporary Addresses Option"
+           name="DHCP6OptIA_NA - Instantiation with specific values (keep automatic length computation)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Non-temporary Addresses Option"
+           name="DHCP6OptIA_NA - Instantiation with specific values (forced optlen)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Non-temporary Addresses Option"
+           name="DHCP6OptIA_NA - Instantiation with a list of IA Addresses (optlen automatic computation)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Non-temporary Addresses Option"
+           name="DHCP6OptIA_NA - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Temporary Addresses Option"
+           name="DHCP6OptIA_TA - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Temporary Addresses Option"
+           name="DHCP6OptIA_TA - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Temporary Addresses Option"
+           name="DHCP6OptIA_TA - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Identity Association for Temporary Addresses Option"
+           name="DHCP6OptIA_TA - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Request Option"
+           name="DHCP6OptOptReq - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Request Option"
+           name="DHCP6OptOptReq - optlen field computation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Request Option"
+           name="DHCP6OptOptReq - instantiation with empty list"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Request Option"
+           name="DHCP6OptOptReq - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Request Option"
+           name="DHCP6OptOptReq - Dissection with specific value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Preference option"
+           name="DHCP6OptPref - Basic instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Preference option"
+           name="DHCP6OptPref - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Preference option"
+           name="DHCP6OptPref - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Preference option"
+           name="DHCP6OptPref - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Elapsed Time"
+           name="DHCP6OptElapsedTime - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Elapsed Time"
+           name="DHCP6OptElapsedTime - Instantiation with specific elapsedtime value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Elapsed Time"
+           name="DHCP6OptElapsedTime - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Elapsed Time"
+           name="DHCP6OptElapsedTime - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Server Unicast Address"
+           name="DHCP6OptServerUnicast - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Server Unicast Address"
+           name="DHCP6OptServerUnicast - Instantiation with specific values (test 1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Server Unicast Address"
+           name="DHCP6OptServerUnicast - Instantiation with specific values (test 2)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Server Unicast Address"
+           name="DHCP6OptServerUnicast - Dissection with default values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Server Unicast Address"
+           name="DHCP6OptServerUnicast - Dissection with specific values (test 1)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Server Unicast Address"
+           name="DHCP6OptServerUnicast - Dissection with specific values (test 2)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Status Code"
+           name="DHCP6OptStatusCode - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Status Code"
+           name="DHCP6OptStatusCode - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Status Code"
+           name="DHCP6OptStatusCode - Automatic Length computation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Rapid Commit"
+           name="DHCP6OptRapidCommit - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Rapid Commit"
+           name="DHCP6OptRapidCommit - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - User class"
+           name="DHCP6OptUserClass - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - User class"
+           name="DHCP6OptUserClass - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - User class"
+           name="DHCP6OptUserClass - Instantiation with one user class data structure"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - User class"
+           name="DHCP6OptUserClass - Dissection with one user class data structure"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - User class"
+           name="DHCP6OptUserClass - Instantiation with two user class data structures"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - User class"
+           name="DHCP6OptUserClass - Dissection with two user class data structures"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor class"
+           name="DHCP6OptVendorClass - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor class"
+           name="DHCP6OptVendorClass - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor class"
+           name="DHCP6OptVendorClass - Instantiation with one vendor class data structure"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor class"
+           name="DHCP6OptVendorClass - Dissection with one vendor class data structure"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor class"
+           name="DHCP6OptVendorClass - Instantiation with two vendor class data structures"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor class"
+           name="DHCP6OptVendorClass - Dissection with two vendor class data structures"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor-specific information"
+           name="DHCP6OptVendorSpecificInfo - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor-specific information"
+           name="DHCP6OptVendorSpecificInfo - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor-specific information"
+           name="DHCP6OptVendorSpecificInfo - Instantiation with specific values (one option)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor-specific information"
+           name="DHCP6OptVendorSpecificInfo - Dissection with with specific values (one option)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor-specific information"
+           name="DHCP6OptVendorSpecificInfo - Instantiation with specific values (two options)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Vendor-specific information"
+           name="DHCP6OptVendorSpecificInfo - Dissection with with specific values (two options)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Interface-Id"
+           name="DHCP6OptIfaceId - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Interface-Id"
+           name="DHCP6OptIfaceId - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Interface-Id"
+           name="DHCP6OptIfaceId - Instantiation with specific value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Interface-Id"
+           name="DHCP6OptIfaceId - Dissection with specific value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Message"
+           name="DHCP6OptReconfMsg - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Message"
+           name="DHCP6OptReconfMsg - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Message"
+           name="DHCP6OptReconfMsg - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Message"
+           name="DHCP6OptReconfMsg - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Accept"
+           name="DHCP6OptReconfAccept - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Accept"
+           name="DHCP6OptReconfAccept - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Accept"
+           name="DHCP6OptReconfAccept - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Reconfigure Accept"
+           name="DHCP6OptReconfAccept - Dssection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers Domain Name List"
+           name="DHCP6OptSIPDomains - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers Domain Name List"
+           name="DHCP6OptSIPDomains - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers Domain Name List"
+           name="DHCP6OptSIPDomains - Instantiation with one domain"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers Domain Name List"
+           name="DHCP6OptSIPDomains - Dissection with one domain"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers Domain Name List"
+           name="DHCP6OptSIPDomains - Instantiation with two domains"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers Domain Name List"
+           name="DHCP6OptSIPDomains - Dissection with two domains"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers Domain Name List"
+           name="DHCP6OptSIPDomains - Enforcing only one dot at end of domain"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers IPv6 Address List"
+           name="DHCP6OptSIPServers - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers IPv6 Address List"
+           name="DHCP6OptSIPServers - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers IPv6 Address List"
+           name="DHCP6OptSIPServers - Instantiation with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers IPv6 Address List"
+           name="DHCP6OptSIPServers - Dissection with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers IPv6 Address List"
+           name="DHCP6OptSIPServers - Instantiation with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SIP Servers IPv6 Address List"
+           name="DHCP6OptSIPServers - Dissection with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Recursive Name Server"
+           name="DHCP6OptDNSServers - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Recursive Name Server"
+           name="DHCP6OptDNSServers - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Recursive Name Server"
+           name="DHCP6OptDNSServers - Instantiation with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Recursive Name Server"
+           name="DHCP6OptDNSServers - Dissection with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Recursive Name Server"
+           name="DHCP6OptDNSServers - Instantiation with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Recursive Name Server"
+           name="DHCP6OptDNSServers - Dissection with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Domain Search List Option"
+           name="DHCP6OptDNSDomains - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Domain Search List Option"
+           name="DHCP6OptDNSDomains - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Domain Search List Option"
+           name="DHCP6OptDNSDomains - Instantiation with specific values (1 domain)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Domain Search List Option"
+           name="DHCP6OptDNSDomains - Dissection with specific values (1 domain)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Domain Search List Option"
+           name="DHCP6OptDNSDomains - Instantiation with specific values (2 domains)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - DNS Domain Search List Option"
+           name="DHCP6OptDNSDomains - Dissection with specific values (2 domains)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - IA_PD Prefix Option"
+           name="DHCP6OptIAPrefix - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Identity Association for Prefix Delegation"
+           name="DHCP6OptIA_PD - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Servers"
+           name="DHCP6OptNISServers - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Servers"
+           name="DHCP6OptNISServers - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Servers"
+           name="DHCP6OptNISServers - Instantiation with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Servers"
+           name="DHCP6OptNISServers - Dissection with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Servers"
+           name="DHCP6OptNISServers - Instantiation with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Servers"
+           name="DHCP6OptNISServers - Dissection with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Servers"
+           name="DHCP6OptNISPServers - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Servers"
+           name="DHCP6OptNISPServers - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Servers"
+           name="DHCP6OptNISPServers - Instantiation with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Servers"
+           name="DHCP6OptNISPServers - Dissection with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Servers"
+           name="DHCP6OptNISPServers - Instantiation with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Servers"
+           name="DHCP6OptNISPServers - Dissection with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Domain Name"
+           name="DHCP6OptNISDomain - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Domain Name"
+           name="DHCP6OptNISDomain - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Domain Name"
+           name="DHCP6OptNISDomain - Instantiation with one domain name"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Domain Name"
+           name="DHCP6OptNISDomain - Dissection with one domain name"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS Domain Name"
+           name="DHCP6OptNISDomain - Instantiation with one domain with trailing dot"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Domain Name"
+           name="DHCP6OptNISPDomain - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Domain Name"
+           name="DHCP6OptNISPDomain - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Domain Name"
+           name="DHCP6OptNISPDomain - Instantiation with one domain name"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Domain Name"
+           name="DHCP6OptNISPDomain - Dissection with one domain name"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - NIS+ Domain Name"
+           name="DHCP6OptNISPDomain - Instantiation with one domain with trailing dot"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SNTP Servers"
+           name="DHCP6OptSNTPServers - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SNTP Servers"
+           name="DHCP6OptSNTPServers - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SNTP Servers"
+           name="DHCP6OptSNTPServers - Instantiation with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SNTP Servers"
+           name="DHCP6OptSNTPServers - Dissection with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SNTP Servers"
+           name="DHCP6OptSNTPServers - Instantiation with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - SNTP Servers"
+           name="DHCP6OptSNTPServers - Dissection with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Information Refresh Time"
+           name="DHCP6OptInfoRefreshTime - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Information Refresh Time"
+           name="DHCP6OptInfoRefreshTime - Basic Dissction"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Information Refresh Time"
+           name="DHCP6OptInfoRefreshTime - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Servers"
+           name="DHCP6OptBCMCSServers - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Servers"
+           name="DHCP6OptBCMCSServers - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Servers"
+           name="DHCP6OptBCMCSServers - Instantiation with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Servers"
+           name="DHCP6OptBCMCSServers - Dissection with specific values (1 address)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Servers"
+           name="DHCP6OptBCMCSServers - Instantiation with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Servers"
+           name="DHCP6OptBCMCSServers - Dissection with specific values (2 addresses)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Domains"
+           name="DHCP6OptBCMCSDomains - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Domains"
+           name="DHCP6OptBCMCSDomains - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Domains"
+           name="DHCP6OptBCMCSDomains - Instantiation with specific values (1 domain)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Domains"
+           name="DHCP6OptBCMCSDomains - Dissection with specific values (1 domain)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Domains"
+           name="DHCP6OptBCMCSDomains - Instantiation with specific values (2 domains)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - BCMCS Domains"
+           name="DHCP6OptBCMCSDomains - Dissection with specific values (2 domains)"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Relay Agent Remote-ID"
+           name="DHCP6OptRemoteID - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Relay Agent Remote-ID"
+           name="DHCP6OptRemoteID - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Relay Agent Remote-ID"
+           name="DHCP6OptRemoteID - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Relay Agent Remote-ID"
+           name="DHCP6OptRemoteID - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Subscriber ID"
+           name="DHCP6OptSubscriberID - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Subscriber ID"
+           name="DHCP6OptSubscriberID - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Subscriber ID"
+           name="DHCP6OptSubscriberID - Instantiation with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Subscriber ID"
+           name="DHCP6OptSubscriberID - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Client FQDN"
+           name="DHCP6OptClientFQDN - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Client FQDN"
+           name="DHCP6OptClientFQDN - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Client FQDN"
+           name="DHCP6OptClientFQDN - Instantiation with various flags combinations"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Client FQDN"
+           name="DHCP6OptClientFQDN - Instantiation with one fqdn"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option - Client FQDN"
+           name="DHCP6OptClientFQDN - Dissection with one fqdn"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Relay Agent Echo Request Option"
+           name="DHCP6OptRelayAgentERO - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Relay Agent Echo Request Option"
+           name="DHCP6OptRelayAgentERO - optlen field computation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Relay Agent Echo Request Option"
+           name="DHCP6OptRelayAgentERO - instantiation with empty list"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Relay Agent Echo Request Option"
+           name="DHCP6OptRelayAgentERO - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Option Relay Agent Echo Request Option"
+           name="DHCP6OptRelayAgentERO - Dissection with specific value"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Solicit"
+           name="DHCP6_Solicit - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Solicit"
+           name="DHCP6_Solicit - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Solicit"
+           name="DHCP6_Solicit - Basic test of DHCP6_solicit.hashret()"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Solicit"
+           name="DHCP6_Solicit - Test of DHCP6_solicit.hashret() with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Solicit"
+           name="DHCP6_Solicit - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Solicit"
+           name="DHCP6_Solicit - Dispatch based on UDP port"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Advertise"
+           name="DHCP6_Advertise - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Advertise"
+           name="DHCP6_Advertise - Basic test of DHCP6_solicit.hashret()"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Advertise"
+           name="DHCP6_Advertise - Test of DHCP6_Advertise.hashret() with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Advertise"
+           name="DHCP6_Advertise - Basic test of answers() with solicit message"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Advertise"
+           name="DHCP6_Advertise - Test of answers() with solicit message"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Advertise"
+           name="DHCP6_Advertise - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Request"
+           name="DHCP6_Request - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Request"
+           name="DHCP6_Request - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Request"
+           name="DHCP6_Request - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Confirm"
+           name="DHCP6_Confirm - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Confirm"
+           name="DHCP6_Confirm - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Confirm"
+           name="DHCP6_Confirm - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Renew"
+           name="DHCP6_Renew - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Renew"
+           name="DHCP6_Renew - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Renew"
+           name="DHCP6_Renew - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Rebind"
+           name="DHCP6_Rebind - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Rebind"
+           name="DHCP6_Rebind - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Rebind"
+           name="DHCP6_Rebind - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Reply"
+           name="DHCP6_Reply - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Reply"
+           name="DHCP6_Reply - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Reply"
+           name="DHCP6_Reply - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Release"
+           name="DHCP6_Release - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Release"
+           name="DHCP6_Release - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Release"
+           name="DHCP6_Release - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Decline"
+           name="DHCP6_Decline - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Decline"
+           name="DHCP6_Confirm - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Decline"
+           name="DHCP6_Decline - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Reconf"
+           name="DHCP6_Reconf - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Reconf"
+           name="DHCP6_Reconf - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_Reconf"
+           name="DHCP6_Reconf - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_InfoRequest"
+           name="DHCP6_InfoRequest - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_InfoRequest"
+           name="DHCP6_InfoRequest - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_InfoRequest"
+           name="DHCP6_InfoRequest - UDP ports overload"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_RelayForward"
+           name="DHCP6_RelayForward - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_RelayForward"
+           name="DHCP6_RelayForward - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_RelayReply"
+           name="DHCP6_RelayReply - Basic Instantiation"
+           duration="0">
+</testcase>
+ <testcase classname="Test DHCP6 Messages - DHCP6_RelayReply"
+           name="DHCP6_RelayReply - Basic Dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Home Agent Address Discovery"
+           name="in6_getha()"
+           duration="0">
+</testcase>
+ <testcase classname="Home Agent Address Discovery"
+           name="ICMPv6HAADRequest - build/dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Home Agent Address Discovery"
+           name="ICMPv6HAADReply - build/dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Home Agent Address Discovery"
+           name="ICMPv6HAADRequest / ICMPv6HAADReply - build/dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPSol - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPSol - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPSol - build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPSol - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPAdv - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPAdv - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPAdv - build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobile Prefix Solicitation/Advertisement"
+           name="ICMPv6MPAdv - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Type 2 Routing Header"
+           name="IPv6ExtHdrRouting - type 2 - build/dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Refresh Advice"
+           name="MIP6OptBRAdvice - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Refresh Advice"
+           name="MIP6OptBRAdvice - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Refresh Advice"
+           name="MIP6OptBRAdvice - build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Refresh Advice"
+           name="MIP6OptBRAdvice - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Alternate Care-of Address"
+           name="MIP6OptAltCoA - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Alternate Care-of Address"
+           name="MIP6OptAltCoA - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Alternate Care-of Address"
+           name="MIP6OptAltCoA - build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Alternate Care-of Address"
+           name="MIP6OptAltCoA - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Nonce Indices"
+           name="MIP6OptNonceIndices - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Nonce Indices"
+           name="MIP6OptNonceIndices - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Nonce Indices"
+           name="MIP6OptNonceIndices - build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Nonce Indices"
+           name="MIP6OptNonceIndices - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Authentication Data"
+           name="MIP6OptBindingAuthData - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Authentication Data"
+           name="MIP6OptBindingAuthData - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Authentication Data"
+           name="MIP6OptBindingAuthData - build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Binding Authentication Data"
+           name="MIP6OptBindingAuthData - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Network Prefix"
+           name="MIP6OptMobNetPrefix - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Network Prefix"
+           name="MIP6OptMobNetPrefix - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Network Prefix"
+           name="MIP6OptMobNetPrefix - build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Network Prefix"
+           name="MIP6OptMobNetPrefix - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Link-Layer Address (MH-LLA)"
+           name="MIP6OptLLAddr - basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Link-Layer Address (MH-LLA)"
+           name="MIP6OptLLAddr - basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Link-Layer Address (MH-LLA)"
+           name="MIP6OptLLAddr - build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Link-Layer Address (MH-LLA)"
+           name="MIP6OptLLAddr - dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Node Identifier"
+           name="MIP6OptMNID - basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Node Identifier"
+           name="MIP6OptMNID - basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Node Identifier"
+           name="MIP6OptMNID - build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Mobile Node Identifier"
+           name="MIP6OptMNID - dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Message Authentication"
+           name="MIP6OptMsgAuth - basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Message Authentication"
+           name="MIP6OptMsgAuth - basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Message Authentication"
+           name="MIP6OptMsgAuth - build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Message Authentication"
+           name="MIP6OptMsgAuth - dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Replay Protection"
+           name="MIP6OptReplayProtection - basic build"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Replay Protection"
+           name="MIP6OptReplayProtection - basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Replay Protection"
+           name="MIP6OptReplayProtection - build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Replay Protection"
+           name="MIP6OptReplayProtection - dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - CGA Parameters"
+           name="MIP6OptCGAParams"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Signature"
+           name="MIP6OptSignature"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Permanent Home Keygen Token"
+           name="MIP6OptHomeKeygenToken"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Care-of Test Init"
+           name="MIP6OptCareOfTestInit"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Care-of Test"
+           name="MIP6OptCareOfTest"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptBRAdvice"
+           name="Mobility Options - Automatic Padding - MIP6OptBRAdvice"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptAltCoA"
+           name="Mobility Options - Automatic Padding - MIP6OptAltCoA"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptNonceIndices"
+           name="Mobility Options - Automatic Padding - MIP6OptNonceIndices"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptBindingAuthData"
+           name="Mobility Options - Automatic Padding - MIP6OptBindingAuthData"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptMobNetPrefix"
+           name="Mobility Options - Automatic Padding - MIP6OptMobNetPrefix"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptLLAddr"
+           name="Mobility Options - Automatic Padding - MIP6OptLLAddr"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptMNID"
+           name="Mobility Options - Automatic Padding - MIP6OptMNID"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptMsgAuth"
+           name="Mobility Options - Automatic Padding - MIP6OptMsgAuth"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptReplayProtection"
+           name="Mobility Options - Automatic Padding - MIP6OptReplayProtection"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptCGAParamsReq"
+           name="Mobility Options - Automatic Padding - MIP6OptCGAParamsReq"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptCGAParams"
+           name="Mobility Options - Automatic Padding - MIP6OptCGAParams"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptSignature"
+           name="Mobility Options - Automatic Padding - MIP6OptSignature"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptHomeKeygenToken"
+           name="Mobility Options - Automatic Padding - MIP6OptHomeKeygenToken"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptCareOfTestInit"
+           name="Mobility Options - Automatic Padding - MIP6OptCareOfTestInit"
+           duration="0">
+</testcase>
+ <testcase classname="Mobility Options - Automatic Padding - MIP6OptCareOfTest"
+           name="Mobility Options - Automatic Padding - MIP6OptCareOfTest"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Refresh Request Message"
+           name="MIP6MH_BRR - Build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Refresh Request Message"
+           name="MIP6MH_BRR - Build with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Refresh Request Message"
+           name="MIP6MH_BRR - Basic dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Refresh Request Message"
+           name="MIP6MH_BRR - Dissection with specific values"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Refresh Request Message"
+           name="MIP6MH_BRR / MIP6MH_BU / MIP6MH_BA hashret() and answers()"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Init Message"
+           name="MIP6MH_HoTI - Build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Init Message"
+           name="MIP6MH_HoTI - Dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Init Message"
+           name="MIP6MH_HoTI - Build (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Init Message"
+           name="MIP6MH_HoTI - Dissection (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Init Message"
+           name="MIP6MH_CoTI - Build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Init Message"
+           name="MIP6MH_CoTI - Dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Init Message"
+           name="MIP6MH_CoTI - Build (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Init Message"
+           name="MIP6MH_CoTI - Dissection (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Message"
+           name="MIP6MH_HoT - Build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Message"
+           name="MIP6MH_HoT - Dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Message"
+           name="MIP6MH_HoT - Build (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Home Test Message"
+           name="MIP6MH_HoT - Dissection (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Message"
+           name="MIP6MH_CoT - Build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Message"
+           name="MIP6MH_CoT - Dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Message"
+           name="MIP6MH_CoT - Build (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Care-of Test Message"
+           name="MIP6MH_CoT - Dissection (specific values)"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Update Message"
+           name="MIP6MH_BU - build (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Update Message"
+           name="MIP6MH_BU - dissection (default values)"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Update Message"
+           name="MIP6MH_BU - build"
+           duration="0">
+</testcase>
+ <testcase classname="Binding Update Message"
+           name="MIP6MH_BU - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Binding ACK Message"
+           name="MIP6MH_BA - build"
+           duration="0">
+</testcase>
+ <testcase classname="Binding ACK Message"
+           name="MIP6MH_BA - dissection"
+           duration="0">
+</testcase>
+ <testcase classname="Binding ERR Message"
+           name="MIP6MH_BE - build"
+           duration="0">
+</testcase>
+ <testcase classname="Binding ERR Message"
+           name="MIP6MH_BE - dissection"
+           duration="0">
+</testcase>
+</testsuite>
