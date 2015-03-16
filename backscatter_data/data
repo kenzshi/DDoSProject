@@ -1,0 +1,419 @@
+19:23:03.903514 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    control-lan0.46674 > server-lan0.ntp: NTPv3, length 48
+	Client, Leap indicator:  (0), Stratum 0, poll 0s, precision 0
+	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
+	  Reference Timestamp:  0.000000000
+	  Originator Timestamp: 0.000000000
+	  Receive Timestamp:    0.000000000
+	  Transmit Timestamp:   3635461383.891042709 (2015/03/15 19:23:03)
+	    Originator - Receive Timestamp:  0.000000000
+	    Originator - Transmit Timestamp: 3635461383.891042709 (2015/03/15 19:23:03)
+19:23:03.903650 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    server-lan0.ntp > control-lan0.46674: NTPv3, length 48
+	Server, Leap indicator:  (0), Stratum 3, poll 0s, precision -20
+	Root Delay: 0.003326, Root dispersion: 0.067016, Reference-ID: boss.isi.deterlab.net
+	  Reference Timestamp:  3635461134.929518625 (2015/03/15 19:18:54)
+	  Originator Timestamp: 3635461383.891042709 (2015/03/15 19:23:03)
+	  Receive Timestamp:    3635461383.903513967 (2015/03/15 19:23:03)
+	  Transmit Timestamp:   3635461383.903627825 (2015/03/15 19:23:03)
+	    Originator - Receive Timestamp:  +0.012471258
+	    Originator - Transmit Timestamp: +0.012585116
+19:23:05.662504 IP (tos 0x0, ttl 64, id 15639, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41277 > server-lan0.http-alt: Flags [R.], cksum 0x75a7 (correct), seq 2236415631, ack 328749519, win 92, options [nop,nop,TS val 6978465 ecr 6931449], length 0
+19:23:06.981496 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    bot1-lan0.45112 > server-lan0.ntp: NTPv3, length 48
+	Client, Leap indicator:  (0), Stratum 0, poll 0s, precision 0
+	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
+	  Reference Timestamp:  0.000000000
+	  Originator Timestamp: 0.000000000
+	  Receive Timestamp:    0.000000000
+	  Transmit Timestamp:   3635461386.964011192 (2015/03/15 19:23:06)
+	    Originator - Receive Timestamp:  0.000000000
+	    Originator - Transmit Timestamp: 3635461386.964011192 (2015/03/15 19:23:06)
+19:23:06.981557 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    server-lan0.ntp > bot1-lan0.45112: NTPv3, length 48
+	Server, Leap indicator:  (0), Stratum 3, poll 0s, precision -20
+	Root Delay: 0.003326, Root dispersion: 0.067077, Reference-ID: boss.isi.deterlab.net
+	  Reference Timestamp:  3635461134.929518625 (2015/03/15 19:18:54)
+	  Originator Timestamp: 3635461386.964011192 (2015/03/15 19:23:06)
+	  Receive Timestamp:    3635461386.981495593 (2015/03/15 19:23:06)
+	  Transmit Timestamp:   3635461386.981544710 (2015/03/15 19:23:06)
+	    Originator - Receive Timestamp:  +0.017484401
+	    Originator - Transmit Timestamp: +0.017533518
+19:23:08.345462 IP (tos 0x0, ttl 64, id 48287, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35801 > server-lan0.http-alt: Flags [R.], cksum 0x5784 (correct), seq 709755477, ack 3211342443, win 92, options [nop,nop,TS val 6977969 ecr 6931449], length 0
+19:23:08.900644 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has server-lan0 tell control-lan0, length 46
+19:23:08.900654 ARP, Ethernet (len 6), IPv4 (len 4), Reply server-lan0 is-at 00:15:17:57:c4:2a (oui Unknown), length 28
+19:23:09.241202 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    bot2-lan0.56071 > server-lan0.ntp: NTPv3, length 48
+	Client, Leap indicator:  (0), Stratum 0, poll 0s, precision 0
+	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
+	  Reference Timestamp:  0.000000000
+	  Originator Timestamp: 0.000000000
+	  Receive Timestamp:    0.000000000
+	  Transmit Timestamp:   3635461389.229989051 (2015/03/15 19:23:09)
+	    Originator - Receive Timestamp:  0.000000000
+	    Originator - Transmit Timestamp: 3635461389.229989051 (2015/03/15 19:23:09)
+19:23:09.241311 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    server-lan0.ntp > bot2-lan0.56071: NTPv3, length 48
+	Server, Leap indicator:  (0), Stratum 3, poll 0s, precision -20
+	Root Delay: 0.003326, Root dispersion: 0.067108, Reference-ID: boss.isi.deterlab.net
+	  Reference Timestamp:  3635461134.929518625 (2015/03/15 19:18:54)
+	  Originator Timestamp: 3635461389.229989051 (2015/03/15 19:23:09)
+	  Receive Timestamp:    3635461389.241201646 (2015/03/15 19:23:09)
+	  Transmit Timestamp:   3635461389.241299618 (2015/03/15 19:23:09)
+	    Originator - Receive Timestamp:  +0.011212595
+	    Originator - Transmit Timestamp: +0.011310566
+19:23:10.659388 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has server-lan0 tell bot1-lan0, length 46
+19:23:10.659398 ARP, Ethernet (len 6), IPv4 (len 4), Reply server-lan0 is-at 00:15:17:57:c4:2a (oui Unknown), length 28
+19:23:13.342851 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has server-lan0 tell bot2-lan0, length 46
+19:23:13.342861 ARP, Ethernet (len 6), IPv4 (len 4), Reply server-lan0 is-at 00:15:17:57:c4:2a (oui Unknown), length 28
+19:23:14.998900 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    bot3-lan0.36607 > server-lan0.ntp: NTPv3, length 48
+	Client, Leap indicator:  (0), Stratum 0, poll 0s, precision 0
+	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
+	  Reference Timestamp:  0.000000000
+	  Originator Timestamp: 0.000000000
+	  Receive Timestamp:    0.000000000
+	  Transmit Timestamp:   3635461394.981410026 (2015/03/15 19:23:14)
+	    Originator - Receive Timestamp:  0.000000000
+	    Originator - Transmit Timestamp: 3635461394.981410026 (2015/03/15 19:23:14)
+19:23:14.999057 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    server-lan0.ntp > bot3-lan0.36607: NTPv3, length 48
+	Server, Leap indicator:  (0), Stratum 3, poll 0s, precision -20
+	Root Delay: 0.003326, Root dispersion: 0.067199, Reference-ID: boss.isi.deterlab.net
+	  Reference Timestamp:  3635461134.929518625 (2015/03/15 19:18:54)
+	  Originator Timestamp: 3635461394.981410026 (2015/03/15 19:23:14)
+	  Receive Timestamp:    3635461394.998899794 (2015/03/15 19:23:14)
+	  Transmit Timestamp:   3635461394.999046954 (2015/03/15 19:23:14)
+	    Originator - Receive Timestamp:  +0.017489768
+	    Originator - Transmit Timestamp: +0.017636927
+19:23:15.001145 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    control-lan0.32980 > server-lan0.ntp: NTPv3, length 48
+	Client, Leap indicator:  (0), Stratum 0, poll 0s, precision 0
+	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
+	  Reference Timestamp:  0.000000000
+	  Originator Timestamp: 0.000000000
+	  Receive Timestamp:    0.000000000
+	  Transmit Timestamp:   3635461394.988816261 (2015/03/15 19:23:14)
+	    Originator - Receive Timestamp:  0.000000000
+	    Originator - Transmit Timestamp: 3635461394.988816261 (2015/03/15 19:23:14)
+19:23:15.001199 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    server-lan0.ntp > control-lan0.32980: NTPv3, length 48
+	Server, Leap indicator:  (0), Stratum 3, poll 0s, precision -20
+	Root Delay: 0.003326, Root dispersion: 0.067199, Reference-ID: boss.isi.deterlab.net
+	  Reference Timestamp:  3635461134.929518625 (2015/03/15 19:18:54)
+	  Originator Timestamp: 3635461394.988816261 (2015/03/15 19:23:14)
+	  Receive Timestamp:    3635461395.001144574 (2015/03/15 19:23:15)
+	  Transmit Timestamp:   3635461395.001192865 (2015/03/15 19:23:15)
+	    Originator - Receive Timestamp:  +0.012328312
+	    Originator - Transmit Timestamp: +0.012376603
+19:23:15.002644 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    control-lan0.47480 > server-lan0.ntp: NTPv3, length 48
+	Client, Leap indicator:  (0), Stratum 0, poll 0s, precision 0
+	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
+	  Reference Timestamp:  0.000000000
+	  Originator Timestamp: 0.000000000
+	  Receive Timestamp:    0.000000000
+	  Transmit Timestamp:   3635461394.990320205 (2015/03/15 19:23:14)
+	    Originator - Receive Timestamp:  0.000000000
+	    Originator - Transmit Timestamp: 3635461394.990320205 (2015/03/15 19:23:14)
+19:23:15.002678 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    server-lan0.ntp > control-lan0.47480: NTPv3, length 48
+	Server, Leap indicator:  (0), Stratum 3, poll 0s, precision -20
+	Root Delay: 0.003326, Root dispersion: 0.067199, Reference-ID: boss.isi.deterlab.net
+	  Reference Timestamp:  3635461134.929518625 (2015/03/15 19:18:54)
+	  Originator Timestamp: 3635461394.990320205 (2015/03/15 19:23:14)
+	  Receive Timestamp:    3635461395.002643991 (2015/03/15 19:23:15)
+	  Transmit Timestamp:   3635461395.002672629 (2015/03/15 19:23:15)
+	    Originator - Receive Timestamp:  +0.012323786
+	    Originator - Transmit Timestamp: +0.012352424
+19:23:15.003393 IP (tos 0x0, ttl 64, id 19393, offset 0, flags [DF], proto TCP (6), length 60)
+    bot1-lan0.41279 > server-lan0.http-alt: Flags [S], cksum 0x73cf (correct), seq 2452606720, win 5840, options [mss 1460,sackOK,TS val 6980801 ecr 0,nop,wscale 6], length 0
+19:23:15.003411 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot1-lan0.41279: Flags [S.], cksum 0x4a1b (correct), seq 2646345308, ack 2452606721, win 5792, options [mss 1460,sackOK,TS val 6980944 ecr 6980801,nop,wscale 6], length 0
+19:23:15.003651 IP (tos 0x0, ttl 64, id 19394, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41279 > server-lan0.http-alt: Flags [.], cksum 0x8f2a (correct), ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.003669 IP (tos 0x0, ttl 64, id 19395, offset 0, flags [DF], proto TCP (6), length 72)
+    bot1-lan0.41279 > server-lan0.http-alt: Flags [P.], cksum 0xe3b1 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 20
+19:23:15.003677 IP (tos 0x0, ttl 64, id 33549, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41279: Flags [.], cksum 0x8f17 (correct), ack 21, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 0
+19:23:15.003680 IP (tos 0x0, ttl 64, id 19396, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41279 > server-lan0.http-alt: Flags [F.], cksum 0x8f15 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.003797 IP (tos 0x0, ttl 64, id 33550, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot1-lan0.41279: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 37
+19:23:15.003818 IP (tos 0x0, ttl 64, id 33551, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41279: Flags [F.], cksum 0x8ef0 (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 0
+19:23:15.003902 IP (tos 0x0, ttl 64, id 32633, offset 0, flags [DF], proto TCP (6), length 60)
+    bot1-lan0.41280 > server-lan0.http-alt: Flags [S], cksum 0xc5d7 (correct), seq 326040504, win 5840, options [mss 1460,sackOK,TS val 6980801 ecr 0,nop,wscale 6], length 0
+19:23:15.003913 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot1-lan0.41280: Flags [S.], cksum 0x6a4a (correct), seq 1734504079, ack 326040505, win 5792, options [mss 1460,sackOK,TS val 6980944 ecr 6980801,nop,wscale 6], length 0
+19:23:15.003917 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41279 > server-lan0.http-alt: Flags [R], cksum 0x7794 (correct), seq 2452606742, win 0, length 0
+19:23:15.003925 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41279 > server-lan0.http-alt: Flags [R], cksum 0x7794 (correct), seq 2452606742, win 0, length 0
+19:23:15.004149 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    control-lan0.36650 > server-lan0.ntp: NTPv3, length 48
+	Client, Leap indicator:  (0), Stratum 0, poll 0s, precision 0
+	Root Delay: 0.000000, Root dispersion: 0.000000, Reference-ID: (unspec)
+	  Reference Timestamp:  0.000000000
+	  Originator Timestamp: 0.000000000
+	  Receive Timestamp:    0.000000000
+	  Transmit Timestamp:   3635461394.991784095 (2015/03/15 19:23:14)
+	    Originator - Receive Timestamp:  0.000000000
+	    Originator - Transmit Timestamp: 3635461394.991784095 (2015/03/15 19:23:14)
+19:23:15.004155 IP (tos 0x0, ttl 64, id 32634, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41280 > server-lan0.http-alt: Flags [.], cksum 0xaf59 (correct), ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.004165 IP (tos 0x0, ttl 64, id 32635, offset 0, flags [DF], proto TCP (6), length 72)
+    bot1-lan0.41280 > server-lan0.http-alt: Flags [P.], cksum 0x03e1 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 20
+19:23:15.004170 IP (tos 0x0, ttl 64, id 60352, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41280: Flags [.], cksum 0xaf46 (correct), ack 21, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 0
+19:23:15.004173 IP (tos 0x0, ttl 64, id 32636, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41280 > server-lan0.http-alt: Flags [F.], cksum 0xaf44 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.004198 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 76)
+    server-lan0.ntp > control-lan0.36650: NTPv3, length 48
+	Server, Leap indicator:  (0), Stratum 3, poll 0s, precision -20
+	Root Delay: 0.003326, Root dispersion: 0.067199, Reference-ID: boss.isi.deterlab.net
+	  Reference Timestamp:  3635461134.929518625 (2015/03/15 19:18:54)
+	  Originator Timestamp: 3635461394.991784095 (2015/03/15 19:23:14)
+	  Receive Timestamp:    3635461395.004148949 (2015/03/15 19:23:15)
+	  Transmit Timestamp:   3635461395.004193795 (2015/03/15 19:23:15)
+	    Originator - Receive Timestamp:  +0.012364854
+	    Originator - Transmit Timestamp: +0.012409700
+19:23:15.004225 IP (tos 0x0, ttl 64, id 60353, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot1-lan0.41280: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 37
+19:23:15.004234 IP (tos 0x0, ttl 64, id 60354, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41280: Flags [F.], cksum 0xaf1f (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 0
+19:23:15.004402 IP (tos 0x0, ttl 64, id 202, offset 0, flags [DF], proto TCP (6), length 60)
+    bot1-lan0.41281 > server-lan0.http-alt: Flags [S], cksum 0x4152 (correct), seq 262177803, win 5840, options [mss 1460,sackOK,TS val 6980801 ecr 0,nop,wscale 6], length 0
+19:23:15.004411 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot1-lan0.41281: Flags [S.], cksum 0x83ae (correct), seq 3451152979, ack 262177804, win 5792, options [mss 1460,sackOK,TS val 6980944 ecr 6980801,nop,wscale 6], length 0
+19:23:15.004414 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41280 > server-lan0.http-alt: Flags [R], cksum 0xc99c (correct), seq 326040526, win 0, length 0
+19:23:15.004420 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41280 > server-lan0.http-alt: Flags [R], cksum 0xc99c (correct), seq 326040526, win 0, length 0
+19:23:15.004649 IP (tos 0x0, ttl 64, id 203, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41281 > server-lan0.http-alt: Flags [.], cksum 0xc8bd (correct), ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.004660 IP (tos 0x0, ttl 64, id 204, offset 0, flags [DF], proto TCP (6), length 72)
+    bot1-lan0.41281 > server-lan0.http-alt: Flags [P.], cksum 0x1d45 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 20
+19:23:15.004665 IP (tos 0x0, ttl 64, id 61188, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41281: Flags [.], cksum 0xc8aa (correct), ack 21, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 0
+19:23:15.004667 IP (tos 0x0, ttl 64, id 205, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41281 > server-lan0.http-alt: Flags [F.], cksum 0xc8a8 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.004772 IP (tos 0x0, ttl 64, id 61189, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot1-lan0.41281: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 37
+19:23:15.004783 IP (tos 0x0, ttl 64, id 61190, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41281: Flags [F.], cksum 0xc883 (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980944 ecr 6980801], length 0
+19:23:15.004900 IP (tos 0x0, ttl 64, id 33632, offset 0, flags [DF], proto TCP (6), length 60)
+    bot1-lan0.41282 > server-lan0.http-alt: Flags [S], cksum 0xcfc5 (correct), seq 4254402465, win 5840, options [mss 1460,sackOK,TS val 6980801 ecr 0,nop,wscale 6], length 0
+19:23:15.004908 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot1-lan0.41282: Flags [S.], cksum 0x312d (correct), seq 1516617367, ack 4254402466, win 5792, options [mss 1460,sackOK,TS val 6980944 ecr 6980801,nop,wscale 6], length 0
+19:23:15.004911 IP (tos 0x0, ttl 64, id 632, offset 0, flags [DF], proto TCP (6), length 60)
+    bot2-lan0.35803 > server-lan0.http-alt: Flags [S], cksum 0x9bfc (correct), seq 3496510026, win 5840, options [mss 1460,sackOK,TS val 6979634 ecr 0,nop,wscale 6], length 0
+19:23:15.004917 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot2-lan0.35803: Flags [S.], cksum 0x9638 (correct), seq 3364534173, ack 3496510027, win 5792, options [mss 1460,sackOK,TS val 6980944 ecr 6979634,nop,wscale 6], length 0
+19:23:15.004919 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41281 > server-lan0.http-alt: Flags [R], cksum 0x4517 (correct), seq 262177825, win 0, length 0
+19:23:15.004924 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41281 > server-lan0.http-alt: Flags [R], cksum 0x4517 (correct), seq 262177825, win 0, length 0
+19:23:15.005149 IP (tos 0x0, ttl 64, id 33633, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41282 > server-lan0.http-alt: Flags [.], cksum 0x763c (correct), ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.005160 IP (tos 0x0, ttl 64, id 33634, offset 0, flags [DF], proto TCP (6), length 72)
+    bot1-lan0.41282 > server-lan0.http-alt: Flags [P.], cksum 0xcac3 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 20
+19:23:15.005165 IP (tos 0x0, ttl 64, id 15305, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41282: Flags [.], cksum 0x7628 (correct), ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6980801], length 0
+19:23:15.005167 IP (tos 0x0, ttl 64, id 33635, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41282 > server-lan0.http-alt: Flags [F.], cksum 0x7627 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980944], length 0
+19:23:15.005224 IP (tos 0x0, ttl 64, id 15306, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot1-lan0.41282: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6980801], length 37
+19:23:15.005231 IP (tos 0x0, ttl 64, id 15307, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41282: Flags [F.], cksum 0x7601 (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6980801], length 0
+19:23:15.005395 IP (tos 0x0, ttl 64, id 30164, offset 0, flags [DF], proto TCP (6), length 60)
+    bot1-lan0.41283 > server-lan0.http-alt: Flags [S], cksum 0xa9f5 (correct), seq 972091669, win 5840, options [mss 1460,sackOK,TS val 6980801 ecr 0,nop,wscale 6], length 0
+19:23:15.005405 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot1-lan0.41283: Flags [S.], cksum 0xf79b (correct), seq 1193665943, ack 972091670, win 5792, options [mss 1460,sackOK,TS val 6980945 ecr 6980801,nop,wscale 6], length 0
+19:23:15.005409 IP (tos 0x0, ttl 64, id 633, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35803 > server-lan0.http-alt: Flags [.], cksum 0xdb47 (correct), ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980944], length 0
+19:23:15.005418 IP (tos 0x0, ttl 64, id 634, offset 0, flags [DF], proto TCP (6), length 72)
+    bot2-lan0.35803 > server-lan0.http-alt: Flags [P.], cksum 0x2fcf (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980944], length 20
+19:23:15.005424 IP (tos 0x0, ttl 64, id 13007, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35803: Flags [.], cksum 0xdb33 (correct), ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.005427 IP (tos 0x0, ttl 64, id 635, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35803 > server-lan0.http-alt: Flags [F.], cksum 0xdb32 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980944], length 0
+19:23:15.005432 IP (tos 0x0, ttl 64, id 2146, offset 0, flags [DF], proto TCP (6), length 60)
+    bot2-lan0.35804 > server-lan0.http-alt: Flags [S], cksum 0x74bf (correct), seq 4053698640, win 5840, options [mss 1460,sackOK,TS val 6979634 ecr 0,nop,wscale 6], length 0
+19:23:15.005438 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot2-lan0.35804: Flags [S.], cksum 0x4e8e (correct), seq 1001481443, ack 4053698641, win 5792, options [mss 1460,sackOK,TS val 6980945 ecr 6979634,nop,wscale 6], length 0
+19:23:15.005441 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41282 > server-lan0.http-alt: Flags [R], cksum 0xd38a (correct), seq 4254402487, win 0, length 0
+19:23:15.005447 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot1-lan0.41282 > server-lan0.http-alt: Flags [R], cksum 0xd38a (correct), seq 4254402487, win 0, length 0
+19:23:15.005520 IP (tos 0x0, ttl 64, id 13008, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot2-lan0.35803: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 37
+19:23:15.005530 IP (tos 0x0, ttl 64, id 13009, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35803: Flags [F.], cksum 0xdb0c (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.005643 IP (tos 0x0, ttl 64, id 30165, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41283 > server-lan0.http-alt: Flags [.], cksum 0x3cab (correct), ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980945], length 0
+19:23:15.005653 IP (tos 0x0, ttl 64, id 30166, offset 0, flags [DF], proto TCP (6), length 72)
+    bot1-lan0.41283 > server-lan0.http-alt: Flags [P.], cksum 0x9132 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6980801 ecr 6980945], length 20
+19:23:15.005658 IP (tos 0x0, ttl 64, id 24777, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41283: Flags [.], cksum 0x3c98 (correct), ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6980801], length 0
+19:23:15.005707 IP (tos 0x0, ttl 64, id 24778, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot1-lan0.41283: Flags [P.], seq 1:38, ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6980801], length 37
+19:23:15.005715 IP (tos 0x0, ttl 64, id 24779, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot1-lan0.41283: Flags [F.], cksum 0x3c72 (correct), seq 38, ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6980801], length 0
+19:23:15.005894 IP (tos 0x0, ttl 64, id 2147, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35804 > server-lan0.http-alt: Flags [.], cksum 0x939d (correct), ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.005907 IP (tos 0x0, ttl 64, id 2148, offset 0, flags [DF], proto TCP (6), length 72)
+    bot2-lan0.35804 > server-lan0.http-alt: Flags [P.], cksum 0xe824 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 20
+19:23:15.005913 IP (tos 0x0, ttl 64, id 57781, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35804: Flags [.], cksum 0x938a (correct), ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.005916 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35803 > server-lan0.http-alt: Flags [R], cksum 0x9b32 (correct), seq 3496510048, win 0, length 0
+19:23:15.005922 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35803 > server-lan0.http-alt: Flags [R], cksum 0x9b32 (correct), seq 3496510048, win 0, length 0
+19:23:15.005925 IP (tos 0x0, ttl 64, id 2149, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35804 > server-lan0.http-alt: Flags [F.], cksum 0x9388 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.005929 IP (tos 0x0, ttl 64, id 25311, offset 0, flags [DF], proto TCP (6), length 60)
+    bot2-lan0.35805 > server-lan0.http-alt: Flags [S], cksum 0x63a1 (correct), seq 2820596461, win 5840, options [mss 1460,sackOK,TS val 6979634 ecr 0,nop,wscale 6], length 0
+19:23:15.005936 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot2-lan0.35805: Flags [S.], cksum 0xe73b (correct), seq 4273534991, ack 2820596462, win 5792, options [mss 1460,sackOK,TS val 6980945 ecr 6979634,nop,wscale 6], length 0
+19:23:15.005939 IP (tos 0x0, ttl 64, id 30167, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41283 > server-lan0.http-alt: Flags [.], cksum 0x3c72 (correct), ack 38, win 92, options [nop,nop,TS val 6980801 ecr 6980945], length 0
+19:23:15.006016 IP (tos 0x0, ttl 64, id 57782, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot2-lan0.35804: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 37
+19:23:15.006030 IP (tos 0x0, ttl 64, id 57783, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35804: Flags [F.], cksum 0x9363 (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.006392 IP (tos 0x0, ttl 64, id 25312, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35805 > server-lan0.http-alt: Flags [.], cksum 0x2c4b (correct), ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.006406 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35804 > server-lan0.http-alt: Flags [R], cksum 0x73f5 (correct), seq 4053698662, win 0, length 0
+19:23:15.006412 IP (tos 0x0, ttl 64, id 25313, offset 0, flags [DF], proto TCP (6), length 72)
+    bot2-lan0.35805 > server-lan0.http-alt: Flags [P.], cksum 0x80d2 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 20
+19:23:15.006418 IP (tos 0x0, ttl 64, id 32065, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35805: Flags [.], cksum 0x2c38 (correct), ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.006421 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35804 > server-lan0.http-alt: Flags [R], cksum 0x73f5 (correct), seq 4053698662, win 0, length 0
+19:23:15.006425 IP (tos 0x0, ttl 64, id 25314, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35805 > server-lan0.http-alt: Flags [F.], cksum 0x2c36 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.006429 IP (tos 0x0, ttl 64, id 44785, offset 0, flags [DF], proto TCP (6), length 60)
+    bot2-lan0.35806 > server-lan0.http-alt: Flags [S], cksum 0xf184 (correct), seq 3462672067, win 5840, options [mss 1460,sackOK,TS val 6979634 ecr 0,nop,wscale 6], length 0
+19:23:15.006435 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot2-lan0.35806: Flags [S.], cksum 0x503b (correct), seq 437911955, ack 3462672068, win 5792, options [mss 1460,sackOK,TS val 6980945 ecr 6979634,nop,wscale 6], length 0
+19:23:15.006507 IP (tos 0x0, ttl 64, id 32066, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot2-lan0.35805: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 37
+19:23:15.006517 IP (tos 0x0, ttl 64, id 32067, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35805: Flags [F.], cksum 0x2c11 (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.006892 IP (tos 0x0, ttl 64, id 44786, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35806 > server-lan0.http-alt: Flags [.], cksum 0x954a (correct), ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.006905 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35805 > server-lan0.http-alt: Flags [R], cksum 0x62d7 (correct), seq 2820596483, win 0, length 0
+19:23:15.006911 IP (tos 0x0, ttl 64, id 44787, offset 0, flags [DF], proto TCP (6), length 72)
+    bot2-lan0.35806 > server-lan0.http-alt: Flags [P.], cksum 0xe9d1 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 20
+19:23:15.006917 IP (tos 0x0, ttl 64, id 33989, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35806: Flags [.], cksum 0x9537 (correct), ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.006920 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35805 > server-lan0.http-alt: Flags [R], cksum 0x62d7 (correct), seq 2820596483, win 0, length 0
+19:23:15.006924 IP (tos 0x0, ttl 64, id 44788, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35806 > server-lan0.http-alt: Flags [F.], cksum 0x9535 (correct), seq 21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.006928 IP (tos 0x0, ttl 64, id 10436, offset 0, flags [DF], proto TCP (6), length 60)
+    bot2-lan0.35807 > server-lan0.http-alt: Flags [S], cksum 0xcc80 (correct), seq 2033494262, win 5840, options [mss 1460,sackOK,TS val 6979634 ecr 0,nop,wscale 6], length 0
+19:23:15.006934 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    server-lan0.http-alt > bot2-lan0.35807: Flags [S.], cksum 0xbeda (correct), seq 359690905, ack 2033494263, win 5792, options [mss 1460,sackOK,TS val 6980945 ecr 6979634,nop,wscale 6], length 0
+19:23:15.007006 IP (tos 0x0, ttl 64, id 33990, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot2-lan0.35806: Flags [P.], seq 1:38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 37
+19:23:15.007016 IP (tos 0x0, ttl 64, id 33991, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35806: Flags [F.], cksum 0x9510 (correct), seq 38, ack 22, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.007391 IP (tos 0x0, ttl 64, id 10437, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35807 > server-lan0.http-alt: Flags [.], cksum 0x03ea (correct), ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.007405 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35806 > server-lan0.http-alt: Flags [R], cksum 0xf0ba (correct), seq 3462672089, win 0, length 0
+19:23:15.007411 IP (tos 0x0, ttl 64, id 10438, offset 0, flags [DF], proto TCP (6), length 72)
+    bot2-lan0.35807 > server-lan0.http-alt: Flags [P.], cksum 0x5871 (correct), seq 1:21, ack 1, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 20
+19:23:15.007417 IP (tos 0x0, ttl 64, id 63435, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35807: Flags [.], cksum 0x03d7 (correct), ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.007420 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    bot2-lan0.35806 > server-lan0.http-alt: Flags [R], cksum 0xf0ba (correct), seq 3462672089, win 0, length 0
+19:23:15.007491 IP (tos 0x0, ttl 64, id 63436, offset 0, flags [DF], proto TCP (6), length 89)
+    server-lan0.http-alt > bot2-lan0.35807: Flags [P.], seq 1:38, ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 37
+19:23:15.007501 IP (tos 0x0, ttl 64, id 63437, offset 0, flags [DF], proto TCP (6), length 52)
+    server-lan0.http-alt > bot2-lan0.35807: Flags [F.], cksum 0x03b1 (correct), seq 38, ack 21, win 91, options [nop,nop,TS val 6980945 ecr 6979634], length 0
+19:23:15.007891 IP (tos 0x0, ttl 64, id 10439, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35807 > server-lan0.http-alt: Flags [.], cksum 0x03b1 (correct), ack 38, win 92, options [nop,nop,TS val 6979634 ecr 6980945], length 0
+19:23:15.044371 IP (tos 0x0, ttl 64, id 10440, offset 0, flags [DF], proto TCP (6), length 52)
+    bot2-lan0.35807 > server-lan0.http-alt: Flags [.], cksum 0x03a6 (correct), ack 39, win 92, options [nop,nop,TS val 6979644 ecr 6980945], length 0
+19:23:15.044620 IP (tos 0x0, ttl 64, id 30168, offset 0, flags [DF], proto TCP (6), length 52)
+    bot1-lan0.41283 > server-lan0.http-alt: Flags [.], cksum 0x3c67 (correct), ack 39, win 92, options [nop,nop,TS val 6980811 ecr 6980945], length 0
+19:23:15.047119 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has server-lan0 tell bot3-lan0, length 46
+19:23:15.047125 ARP, Ethernet (len 6), IPv4 (len 4), Reply server-lan0 is-at 00:15:17:57:c4:2a (oui Unknown), length 28
+19:23:15.061111 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    247.34.30.182.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x6b9c (correct), seq 0:5, win 8192, length 5
+19:23:15.134570 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    123.228.204.93.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x3933 (correct), seq 0:5, win 8192, length 5
+19:23:15.230514 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    42.162.31.41.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x37aa (correct), seq 0:5, win 8192, length 5
+19:23:15.326709 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    mta-98-11-242-192.ddns.stny.rr.com.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x2ca9 (correct), seq 0:5, win 8192, length 5
+19:23:15.422404 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    56.53.51.253.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x1543 (correct), seq 0:5, win 8192, length 5
+19:23:15.518348 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    54.213.111.177.isp.timbrasil.com.br.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xface (correct), seq 0:5, win 8192, length 5
+19:23:15.614544 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    sw01-posgrad.lan.fmvz.unesp.br.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x3b54 (correct), seq 0:5, win 8192, length 5
+19:23:15.710738 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    142.34.153.109.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x59e5 (correct), seq 0:5, win 8192, length 5
+19:23:15.806433 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    244.69.144.198.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xfc68 (correct), seq 0:5, win 8192, length 5
+19:23:15.902379 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    85.131.157.43.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x8ec6 (correct), seq 0:5, win 8192, length 5
+19:23:15.998573 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    140.60.80.132.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xa4b4 (correct), seq 0:5, win 8192, length 5
+19:23:16.058792 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    232.57.46.119.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x6ac4 (correct), seq 0:5, win 8192, length 5
+19:23:16.138493 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    234.48.20.125.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x82c7 (correct), seq 0:5, win 8192, length 5
+19:23:16.250428 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    205.193.247.218.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xbbd8 (correct), seq 0:5, win 8192, length 5
+19:23:16.346374 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    181.73.26.90.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xb1d1 (correct), seq 0:5, win 8192, length 5
+19:23:16.446817 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    217.26.79.102.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x58f4 (correct), seq 0:5, win 8192, length 5
+19:23:16.542512 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    29.227.123.233.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xe7a8 (correct), seq 0:5, win 8192, length 5
+19:23:16.638457 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    121.172.126.78.rev.sfr.net.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x867d (correct), seq 0:5, win 8192, length 5
+19:23:16.734402 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    214.101.70.192.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x644f (correct), seq 0:5, win 8192, length 5
+19:23:16.832846 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    200.250.66.59.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x763f (correct), seq 0:5, win 8192, length 5
+19:23:16.926542 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    152.48.106.108.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x7ed8 (correct), seq 0:5, win 8192, length 5
+19:23:17.022488 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    206.235.133.193.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x2cc8 (correct), seq 0:5, win 8192, length 5
+19:23:17.094446 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    21.69.252.102.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x6fc9 (correct), seq 0:5, win 8192, length 5
+19:23:17.183394 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    75.156.228.90.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x517e (correct), seq 0:5, win 8192, length 5
+19:23:17.283087 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    24.115.107.252.res-cmts.man2.ptd.net.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xfd05 (correct), seq 0:5, win 8192, length 5
+19:23:17.383029 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    150.108.63.183.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xab51 (correct), seq 0:5, win 8192, length 5
+19:23:17.482972 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    ACD7A611.ipt.aol.com.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x2e8c (correct), seq 0:5, win 8192, length 5
+19:23:17.583165 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    233.92.172.158.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xeb79 (correct), seq 0:5, win 8192, length 5
+19:23:17.674862 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    215.212.176.93.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xf942 (correct), seq 0:5, win 8192, length 5
+19:23:17.771057 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    229.102.159.161.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xfc6c (correct), seq 0:5, win 8192, length 5
+19:23:17.867001 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    hn.kd.ny.adsl.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x9222 (correct), seq 0:5, win 8192, length 5
+19:23:17.963197 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    113.sub-174-237-66.myvzw.com.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x9016 (correct), seq 0:5, win 8192, length 5
+19:23:18.038405 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    252.62.8.222.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x7c58 (correct), seq 0:5, win 8192, length 5
+19:23:18.094373 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    246.200.100.145.ftp-data > server-lan0.http-alt: Flags [S], cksum 0x261b (correct), seq 0:5, win 8192, length 5
+19:23:18.190567 IP (tos 0x0, ttl 64, id 1, offset 0, flags [none], proto TCP (6), length 45)
+    165.104.43.5.ftp-data > server-lan0.http-alt: Flags [S], cksum 0xb107 (correct), seq 0:5, win 8192, length 5
+
